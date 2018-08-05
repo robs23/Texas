@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\css\Style.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\css\Style.css" />
+    <None Include="wwwroot\images\bio-img.png" />
+    <None Include="wwwroot\images\icon_facebook.png" />
+    <None Include="wwwroot\images\icon_github.png" />
+    <None Include="wwwroot\images\icon_linkedIn.png" />
+    <None Include="wwwroot\images\icon_twitter.png" />
+    <None Include="wwwroot\images\notebook.jpg" />
+    <None Include="wwwroot\images\projects-qr_scanner.png" />
+    <None Include="wwwroot\images\projects-systo.png" />
+  </ItemGroup>
+</Project>

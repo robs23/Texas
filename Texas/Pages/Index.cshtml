@@ -1,0 +1,51 @@
+﻿@page
+
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<article>
+    <section id="row-1">
+        <div id="welcome">
+            <h1>WELCOME ON MY HOMEPAGE!</h1>
+            <p>
+                This is my place on the web. What's the purpose of it? Well, it's going be mostly porftolio site where I'll be showing projects I've done or I'm working on at the moment.
+            </p>
+        </div>
+    </section>
+    <section id="row-2">
+        <h1>BIO</h1>
+        <div id="bio-img">
+            <img src="~/images/bio-img.png" />
+        </div>
+        <div id="bio-text">
+            <p>
+                I've been programming for around 6 years. Most of this time I spent creating Visual Basic 6 apps for Windows and VBA apps within MS Office Suite (Excel & Access). I also experimented briefly with Java and Python, but due to the difficult distribution of such applications in the Windows environment, I abandoned this topic.
+                From 2017 I create applications in .Net - initially only for Windows in Windows Forms, later also for the web in Asp.Net Mvc and recently also mobile using Xamarin.Forms.
+            </p>
+        </div>
+    </section>
+    <section id="row-3">
+        <h1>PROJECTS</h1>
+        <div id="projects-container">
+            <a href="#"><img src="~/images/projects-systo.png" /></a>
+            <a href="#"><img src="~/images/projects-qr_scanner.png" /></a>
+        </div>
+        <div class="btn-center">
+            <input type="button" value="LEARN MORE" id="learn-more" class="btn btn-primary" />
+        </div>
+    </section>
+    <section id="row-4">
+        <h1>CONTACT ME</h1>
+        <div id="contact-inputs">
+            <div id="contact-name-mail">
+                <input type="text" placeholder="NAME" id="contact-name" />
+                <input type="email" placeholder="E-MAIL" id="contact-mail" />
+            </div>
+            <textarea type="text" placeholder="MESSAGE" id="contact-message"></textarea>
+
+        </div>
+        <input type="button" value="SUBMIT" id="contact-submit" class="btn btn-primary" />
+    </section>
+</article>
