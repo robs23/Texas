@@ -235,10 +235,22 @@ footer {
     text-align: center;
 }
 
+#social-icons{
+    margin-bottom: 20px;
+}
+
 
 @media only screen and (max-width: 1100px) {
     #bio-img {
         margin-left: 5%;
+    }
+
+    #nav-lang ul li {
+        width: 70px;
+    }
+
+    #nav-lang ul {
+        width: 150px;
     }
 }
 
@@ -251,9 +263,6 @@ footer {
         width: 70px;
     }
 
-    #nav-lang ul {
-        width: 150px;
-    }
 
     #bio-img {
         margin: 0;

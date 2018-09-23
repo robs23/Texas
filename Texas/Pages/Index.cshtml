@@ -1,4 +1,6 @@
 ﻿@page
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
 
 @model IndexModel
 @{
@@ -8,44 +10,42 @@
 <article>
     <section id="row-1">
         <div id="welcome">
-            <h1>WELCOME ON MY HOMEPAGE!</h1>
+            <h1>@Localizer["Welcome"]!</h1>
             <p>
-                This is my place on the web. What's the purpose of it? Well, it's going be mostly porftolio site where I'll be showing projects I've done or I'm working on at the moment.
+                @Localizer["Welcome text"]
             </p>
         </div>
     </section>
     <section id="row-2">
-        <h1>BIO</h1>
+        <h1>@Localizer["Bio"]</h1>
         <div id="bio-img">
             <img src="~/images/bio-img.png" />
         </div>
         <div id="bio-text">
             <p>
-                I've been programming for around 6 years. Most of this time I spent creating Visual Basic 6 apps for Windows and VBA apps within MS Office Suite (Excel & Access). I also experimented briefly with Java and Python, but due to the difficult distribution of such applications in the Windows environment, I abandoned this topic.
-                From 2017 I create applications in .Net - initially only for Windows in Windows Forms, later also for the web in Asp.Net Mvc and recently also mobile using Xamarin.Forms.
+                @Localizer["Bio text"]
             </p>
         </div>
     </section>
     <section id="row-3">
-        <h1>PROJECTS</h1>
+        <h1>@Localizer["Projects"]</h1>
         <div id="projects-container">
             <a href="#"><img src="~/images/projects-systo.png" /></a>
             <a href="#"><img src="~/images/projects-qr_scanner.png" /></a>
         </div>
         <div class="btn-center">
-            <input type="button" value="LEARN MORE" id="learn-more" class="btn btn-primary" />
+            <input type="button" value=@Localizer["Learn more"] id="learn-more" class="btn btn-primary" />
         </div>
     </section>
     <section id="row-4">
-        <h1>CONTACT ME</h1>
-        <div id="contact-inputs">
+        <h1>@Localizer["Contact Me"]</h1>
+        <div id="contact-inputs" class="form-horizontal">
             <div id="contact-name-mail">
-                <input type="text" placeholder="NAME" id="contact-name" />
-                <input type="email" placeholder="E-MAIL" id="contact-mail" />
+                <input type="text" placeholder=@Localizer["Name"] id="contact-name" class="form-control" />
+                <input type="email" placeholder=@Localizer["E-mail"] id="contact-mail" class="form-control" />
             </div>
-            <textarea type="text" placeholder="MESSAGE" id="contact-message"></textarea>
-
+            <textarea type="text" placeholder=@Localizer["Message"] id="contact-message"></textarea>
         </div>
-        <input type="button" value="SUBMIT" id="contact-submit" class="btn btn-primary" />
+        <input type="button" value=@Localizer["Submit"] id="contact-submit" class="btn btn-primary" />
     </section>
 </article>
