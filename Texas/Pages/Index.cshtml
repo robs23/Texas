@@ -1,8 +1,8 @@
 ﻿@page
 @using Microsoft.AspNetCore.Mvc.Localization
 @inject IViewLocalizer Localizer
-
 @model IndexModel
+
 @{
     ViewData["Title"] = "Home page";
 }
@@ -39,13 +39,49 @@
     </section>
     <section id="row-4">
         <h1>@Localizer["Contact Me"]</h1>
-        <div id="contact-inputs" class="form-horizontal">
-            <div id="contact-name-mail">
-                <input type="text" placeholder=@Localizer["Name"] id="contact-name" class="form-control" />
-                <input type="email" placeholder=@Localizer["E-mail"] id="contact-mail" class="form-control" />
+        <form method="post" asp-page-handler="SendMail">
+            <div id="contact-inputs" class="form-horizontal">
+                <div id="contact-name-mail">
+                    <input type="text" placeholder=@Localizer["Name"] id="contact-name" class="form-control" asp-for="Name" />
+                    <span asp-validation-for="Name"></span>
+                    <input type="email" placeholder=@Localizer["E-mail"] id="contact-mail" class="form-control" asp-for="Mail" />
+                    <span asp-validation-for="Mail"></span>
+                </div>
+                <textarea type="text" placeholder=@Localizer["Message"] id="contact-message" asp-for="Message"></textarea>
+                <span asp-validation-for="Message"></span>
             </div>
-            <textarea type="text" placeholder=@Localizer["Message"] id="contact-message"></textarea>
-        </div>
-        <input type="button" value=@Localizer["Submit"] id="contact-submit" class="btn btn-primary" />
+            <input type="submit" value=@Localizer["Submit"] id="contact-submit" class="btn btn-primary" />
+        </form>
     </section>
 </article>
+
+@section scripts{ 
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}
+
+@*@section Scripts{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#contact-submit").click(function (e) {
+                e.preventDefault();
+                var t = $("input[name='__RequestVerificationToken']").val();
+                $.ajax({
+                    url: 'Index',
+                    headers:
+                        {
+                            "RequestVerificationToken": t
+                        },
+                    type: "POST",
+                    data: { data: 'foo2' },
+                }).done(function (data) {
+                    alert("Poszło");
+                }).fail(function (a, v, e) {
+                    alert(e);
+                });
+
+            });
+        })
+
+    </script>
+}*@
+
