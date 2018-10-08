@@ -4,8 +4,19 @@
 @model IndexModel
 
 @{
-    ViewData["Title"] = "Home page";
+    if (ViewData["MessageSent"] != null)
+    {
+
+
+    }
 }
+
+<div id="dlgbox">
+    <div id="dlg-body">@Localizer["MessageSent"]</div>
+    <div id="dlg-btn">
+        <button onclick="closeDialog">@Localizer["Close"]</button>
+    </div>
+</div>
 
 <article>
     <section id="row-1">
@@ -55,33 +66,33 @@
     </section>
 </article>
 
-@section scripts{ 
+@section scripts{
     @await Html.PartialAsync("_ValidationScriptsPartial")
 }
 
 @*@section Scripts{
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#contact-submit").click(function (e) {
-                e.preventDefault();
-                var t = $("input[name='__RequestVerificationToken']").val();
-                $.ajax({
-                    url: 'Index',
-                    headers:
-                        {
-                            "RequestVerificationToken": t
-                        },
-                    type: "POST",
-                    data: { data: 'foo2' },
-                }).done(function (data) {
-                    alert("Poszło");
-                }).fail(function (a, v, e) {
-                    alert(e);
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#contact-submit").click(function (e) {
+                    e.preventDefault();
+                    var t = $("input[name='__RequestVerificationToken']").val();
+                    $.ajax({
+                        url: 'Index',
+                        headers:
+                            {
+                                "RequestVerificationToken": t
+                            },
+                        type: "POST",
+                        data: { data: 'foo2' },
+                    }).done(function (data) {
+                        alert("Poszło");
+                    }).fail(function (a, v, e) {
+                        alert(e);
+                    });
+
                 });
+            })
 
-            });
-        })
-
-    </script>
-}*@
+        </script>
+    }*@
 

@@ -1,4 +1,42 @@
-﻿.hamburger {
+﻿
+#dlgbox{
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 480px;
+    z-index:9999;
+    border-radius: 10px;
+    background-color: white;
+    border-color: #7c7d7e;
+    border-style: solid;
+    border-width: thick;
+}
+
+#dlg-body{
+    color:black;
+    font-size:14px;
+    padding: 10px;
+    margin: 0px 10px 0px 10px;
+}
+
+#dlg-btn {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#dlg-btn button{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border-style: hidden;
+    background-color: green;
+    color: white;
+    padding: 5px;
+}
+
+.hamburger {
     margin-top: 5px;
     display: none;
     float: left;

@@ -123,6 +123,9 @@
   <data name="Bio text" xml:space="preserve">
     <value>I've been programming for around 6 years. Most of this time I spent creating Visual Basic 6 apps for Windows and VBA apps within MS Office Suite (Excel &amp; Access). I also experimented briefly with Java and Python, but due to the difficult distribution of such applications in the Windows environment, I abandoned this topic. From 2017 I create applications in .NET - initially only for Windows in Windows Forms, later also for the web in Asp.Net MVC and recently also mobile using Xamarin.Forms.</value>
   </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
   <data name="Contact Me" xml:space="preserve">
     <value>CONTACT ME</value>
   </data>
@@ -134,6 +137,9 @@
   </data>
   <data name="Message" xml:space="preserve">
     <value>MESSAGE</value>
+  </data>
+  <data name="MessageSent" xml:space="preserve">
+    <value>Thanks for showing interest! I will try to answer as soon as possible :)</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>NAME</value>

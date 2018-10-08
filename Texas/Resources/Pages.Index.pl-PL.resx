@@ -123,6 +123,9 @@
   <data name="Bio text" xml:space="preserve">
     <value>Programuję od ok. 6 lat. Większość tego czasu spędziłem robiąc aplikację w Visual Basic 6 dla Windows i aplikacje VBA dla pakietu MS Office (Excel i Access). Eksperymentowałem również króko z Javą i Pythonem, ale porzuciłem ten temat z powodu utrudnionej dystrybucji aplickacji w systemie Windows. Od 2017 roku tworzę aplikację w technologii .NET - początkowo tylko dla Windows w technologii Windows Forms, następnie również aplikacje sieciowe w Asp.Net MVC a ostatnio również aplikacje mobilne przy użyciu Xamarin.Forms.</value>
   </data>
+  <data name="Close" xml:space="preserve">
+    <value>Zamknij</value>
+  </data>
   <data name="Contact Me" xml:space="preserve">
     <value>KONTAKT</value>
   </data>
@@ -134,6 +137,9 @@
   </data>
   <data name="Message" xml:space="preserve">
     <value>WIADOMOŚĆ</value>
+  </data>
+  <data name="MessageSent" xml:space="preserve">
+    <value>Dzięki za zainteresowanie! Postaram się odpowiedzieć jak najszybciej :)</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>IMIĘ</value>
