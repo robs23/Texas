@@ -4,19 +4,19 @@
 @model IndexModel
 
 @{
-    if (ViewData["MessageSent"] != null)
+    if (TempData["MessageSent"] != null)
     {
-
-
+        <div id="dlg-container">
+            <div id="dlgbox">
+                <div id="dlg-body">@Localizer["MessageSent"]</div>
+                <div id="dlg-btn">
+                    <button onclick="closeDialog()" class="btn btn-success">@Localizer["Close"]</button>
+                </div>
+            </div>
+        </div>
     }
 }
 
-<div id="dlgbox">
-    <div id="dlg-body">@Localizer["MessageSent"]</div>
-    <div id="dlg-btn">
-        <button onclick="closeDialog">@Localizer["Close"]</button>
-    </div>
-</div>
 
 <article>
     <section id="row-1">
@@ -61,13 +61,23 @@
                 <textarea type="text" placeholder=@Localizer["Message"] id="contact-message" asp-for="Message"></textarea>
                 <span asp-validation-for="Message"></span>
             </div>
-            <input type="submit" value=@Localizer["Submit"] id="contact-submit" class="btn btn-primary" />
+            <input type="submit" onclick="unclickable()" value=@Localizer["Submit"] id="contact-submit" class="btn btn-primary" />
         </form>
     </section>
 </article>
 
 @section scripts{
     @await Html.PartialAsync("_ValidationScriptsPartial")
+    <script type="text/javascript">
+        function closeDialog() {
+            $('#dlg-container').hide();
+        }
+
+        function unclickable() {
+            $('#contact-submit').prop('disabled', true);
+            $('#contact-submit').innerText = "SENDING..";
+        }
+    </script>
 }
 
 @*@section Scripts{

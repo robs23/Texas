@@ -28,7 +28,9 @@ namespace Texas
             services.AddLocalization(options => options.ResourcesPath = "Resources");
             services.AddMvc()
               .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
-              .AddDataAnnotationsLocalization();
+              .AddDataAnnotationsLocalization()
+              .AddSessionStateTempDataProvider();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -57,7 +59,7 @@ namespace Texas
             });
 
             app.UseStaticFiles();
-
+            app.UseSession();
             app.UseMvc();
         }
     }

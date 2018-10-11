@@ -46,6 +46,7 @@ namespace Texas.Pages
             string textBody =  Name + " przesyła wiadomość: " + Message + ". Możesz odpowiedzieć na adres: " + Mail;
             string htmlBody = string.Format("<p><b>{0}</b> przesyła wiadomość: <br><br>{1}<br><br>Możesz odpowiedzieć na adres: {2}</p>",Name,Message,Mail);
             mail.Send(Static.Secrets.ContactMeMail, "Nowa wiadomość na Twojej stronie!", textBody, htmlBody);
+            TempData["MessageSent"] = "Sent!";
             return RedirectToPage();
         }
     }
