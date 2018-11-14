@@ -45,7 +45,7 @@
             <a href="#"><img src="~/images/qr_scanner_300.png" /></a>
         </div>
         <div class="btn-center">
-            <input type="button" value=@Localizer["Learn more"] id="learn-more" class="btn btn-primary" />
+            <input type="button" onclick="GetProjects()" value=@Localizer["Learn more"] id="learn-more" class="btn btn-primary" />
         </div>
     </section>
     <section id="row-4">
@@ -76,6 +76,10 @@
         function unclickable() {
             $('#contact-submit').prop('disabled', true);
             $('#contact-submit').innerText = "SENDING..";
+        }
+
+        function GetProjects() {
+            alert("Kliknięto");
         }
     </script>
 }
