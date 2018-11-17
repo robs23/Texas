@@ -160,7 +160,9 @@
             font-size: 20px;
         }
 
-#row-1 {
+        /* --------------Index.cshtml styling----------------*/
+
+#index #row-1 {
     background-image: url('../images/notebook.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -179,7 +181,7 @@ h1 {
     font-weight: 700;
 }
 
-#row-2, #row-3, #row-4 {
+#index #row-2, #row-3, #row-4 {
     height: 550px;
 }
 
@@ -208,12 +210,12 @@ p {
     text-align: center;
 }
 
-#row-2 {
+#index #row-2 {
     border: 1px solid white;
     background-color: white;
 }
 
-#row-3 {
+#index #row-3 {
     background-color: #6e6964;
 }
 
@@ -234,7 +236,7 @@ p {
     text-align: center;
 }
 
-#row-4 {
+#index #row-4 {
     margin-top: 0px;
     padding-top: 0px;
     background-color: #000;
@@ -279,6 +281,10 @@ p {
     margin-top: 30px;
 }
 
+/* --------------End of Index.cshtml styling----------------*/
+
+/* --------------Footer styling----------------*/
+
 footer {
     background-color: #000;
     color: white;
@@ -289,6 +295,18 @@ footer {
     margin-bottom: 20px;
 }
 
+/* --------------End of Footer styling----------------*/
+
+#projects #row-1 {
+    background-image: url('../images/projects.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+#projects #row-2{
+
+}
 
 @media only screen and (max-width: 1100px) {
     #bio-img {

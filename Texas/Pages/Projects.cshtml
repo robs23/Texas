@@ -1,0 +1,15 @@
+﻿@page
+@model Texas.Pages.ProjectsModel
+@{
+    ViewData["Title"] = "Projects";
+}
+
+<article id="projects">
+    <section id="row-1">
+
+    </section>
+    <section id="row-2">
+        @await Html.PartialAsync("~/Pages/Projects/_qrScanner.cshtml")
+    </section>
+</article>
+

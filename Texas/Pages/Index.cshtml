@@ -18,7 +18,7 @@
 }
 
 
-<article>
+<article id="index">
     <section id="row-1">
         <div id="welcome">
             <h1>@Localizer["Welcome"]!</h1>
@@ -45,7 +45,8 @@
             <a href="#"><img src="~/images/qr_scanner_300.png" /></a>
         </div>
         <div class="btn-center">
-            <input type="button" onclick="GetProjects()" value=@Localizer["Learn more"] id="learn-more" class="btn btn-primary" />
+            <a asp-page="./Projects" class="btn btn-primary" id="learn-more">@Localizer["Learn more"]</a>
+            @*<input type="submit" onclick="GetProjects()" value=@Localizer["Learn more"] id="learn-more" class="btn btn-primary" />*@
         </div>
     </section>
     <section id="row-4">
@@ -79,7 +80,6 @@
         }
 
         function GetProjects() {
-            alert("Kliknięto");
         }
     </script>
 }
