@@ -1,6 +1,21 @@
-﻿@page
-@model _systoModel
-@{
-}
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
 
-<h1>To będzie opis SYSto!</h1>
+<article id="systo">
+    <h1>Systo</h1>
+    <section id="project-intro">
+        <h3 id="project-section-title">@Localizer["Intro"]</h3>
+        <p>@Localizer["Intro_text"]</p>
+    </section>
+    <section id="project-techno">
+        <h3 id="project-section-title">@Localizer["Techno"]</h3>
+        <p>@Localizer["Techno_text"]</p>
+    </section>
+    <section id="project-demo">
+        <h3 id="project-section-title">@Localizer["Demo"]</h3>
+        <p>
+            @Localizer["Demo_text"]
+        </p>
+    </section>
+</article>
+
