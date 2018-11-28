@@ -1,16 +1,15 @@
 ﻿@page
 @model Texas.Pages.ProjectsModel
-@{
-    ViewData["Title"] = "Projects";
-}
 
 <article id="projects">
     <section id="row-1">
 
     </section>
     <section id="row-2">
-        @await Html.PartialAsync("~/Pages/Projects/_qrScanner.cshtml")
-        @await Html.PartialAsync("~/Pages/Projects/_systo.cshtml")
+        <div id="feed">
+            @await Html.PartialAsync("~/Pages/Projects/_qrScanner.cshtml")
+            @await Html.PartialAsync("~/Pages/Projects/_systo.cshtml")
+        </div>
     </section>
 </article>
 
