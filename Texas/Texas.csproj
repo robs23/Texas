@@ -6,6 +6,9 @@
     <Content Remove="wwwroot\css\Style.css" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Remove="Resources\Pages.Projects._qrScanner.pl-PL.resx" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
   </ItemGroup>
@@ -13,6 +16,7 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Pages.Projects._qrScanner.pl-PL.resx" />
     <None Include="wwwroot\css\Style.css" />
     <None Include="wwwroot\images\bio-img.png" />
     <None Include="wwwroot\images\icon_facebook.png" />

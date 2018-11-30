@@ -1,19 +1,19 @@
-﻿
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
 <article id="qr-scanner">
     <h1>QR Scanner</h1>
     <section id="project-intro">
-
+        <h3 id="project-section-title">@Localizer["Intro"]</h3>
+        <p>@Localizer["Intro_text"]</p>
     </section>
     <section id="project-image">
         <img src="~/images/systo_systems.png" class="project-img" />
     </section>
     <section id="project-techno">
-
+        <h3 id="project-section-title">@Localizer["Techno"]</h3>
+        <p>@Localizer["Techno_text"]</p>
     </section>
-    <section id="project-walktrough">
-
-    </section>
-    <section id="project-demo">
-
-    </section>
+    <section id="project-walktrough"></section>
+    <section id="project-demo"></section>
 </article>
