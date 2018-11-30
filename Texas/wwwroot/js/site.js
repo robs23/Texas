@@ -2,6 +2,8 @@
 $(document).ready(function () {
     $('.smooth-slide').click(function (e) {
         var linkHref = $(this).attr('href');
+        var start = linkHref.indexOf("#");
+        linkHref = linkHref.substring(start, linkHref.Length);
 
         $('html, body').animate({
             scrollTop: $(linkHref).offset().top

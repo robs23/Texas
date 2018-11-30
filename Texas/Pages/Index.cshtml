@@ -41,8 +41,8 @@
     <section id="row-3">
         <h1>@Localizer["Projects"]</h1>
         <div id="projects-container">
-            <a href="#"><img src="~/images/projects-systo.png" /></a>
-            <a href="#"><img src="~/images/qr_scanner_300.png" /></a>
+            <a asp-page="./Projects" asp-fragment="systo"><img src="~/images/projects-systo.png" /></a>
+            <a asp-page="./Projects" asp-fragment="qr-scanner"><img src="~/images/qr_scanner_300.png" /></a>
         </div>
         <div class="btn-center">
             <a asp-page="./Projects" class="btn btn-primary" id="learn-more">@Localizer["Learn more"]</a>
