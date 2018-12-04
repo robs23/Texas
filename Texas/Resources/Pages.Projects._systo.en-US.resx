@@ -132,6 +132,9 @@
   <data name="Intro_text" xml:space="preserve">
     <value>My goal was to create simple yet quite powerfull web app with some ERP capabilities, mostly to develop myself in ASP.NET MVC programming. However, what I eneded up with (so far) is partially developed administration, logistics, HR and CRM panels - functionalities requested by friended transport company who's using the app. I'd love to give it more time to develop other panels and features, but can't find the time for the moment.</value>
   </data>
+  <data name="Learn more" xml:space="preserve">
+    <value>LEARN MORE</value>
+  </data>
   <data name="Techno" xml:space="preserve">
     <value>TECH STACK</value>
   </data>

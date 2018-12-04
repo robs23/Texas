@@ -181,8 +181,12 @@ h1 {
     font-weight: 700;
 }
 
-#index #row-2, #row-3, #row-4 {
+#index #row-2, #row-3{
     height: 550px;
+}
+
+#index #row-4{
+    height: 300px;
 }
 
 #bio-img {
@@ -199,7 +203,7 @@ body {
     margin: 0 !important;
     padding: 0 !important;
     font-family: sans-serif;
-    background-color: #6e6964;
+    background-color: white;/*#6e6964;*/
 }
 
 p {
@@ -272,7 +276,7 @@ p {
 }
 
 #index #row-4 {
-    margin-top: 0px;
+    margin-top: -20px;
     padding-top: 0px;
     background-color: #000;
 }
@@ -324,10 +328,15 @@ footer {
     background-color: #000;
     color: white;
     text-align: center;
+    padding-top: 20px;
 }
 
 #social-icons{
     margin-bottom: 20px;
+}
+
+#social-icons a{
+    padding-right:15px;
 }
 
 /* --------------End of Footer styling----------------*/
@@ -347,6 +356,11 @@ footer {
 #projects #feed {
     margin: 0 auto;
     width: 900px;
+    text-align: justify;
+}
+
+#feed article{
+    margin-bottom:100px;
 }
 
 #projects h3, h1 {
@@ -435,6 +449,7 @@ footer {
     }
 
     /* --------------Projects.cshtml----------------*/
+
     #projects #row-1 {
         background-image: url('../images/projects-mobile.jpg');
         background-repeat: no-repeat;

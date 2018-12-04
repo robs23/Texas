@@ -127,12 +127,15 @@
     <value>Wstęp</value>
   </data>
   <data name="Intro_text" xml:space="preserve">
-    <value>Program powstał, aby ułatwić ewidencję awarii maszyn pracownikom działu utrzymania ruchu firmy produkcyjnej. System składa się z aplikacji desktopowej, służącej do tworzenia danych podstawowych (np. lista maszyn) i generowania raportów, oraz aplikacji mobilnej pozwalającej zeskanowac kod QR maszyny by zarejestrowac awarię. </value>
+    <value>Program powstał, aby ułatwić ewidencję awarii maszyn pracownikom firmy produkcyjnej. System składa się z aplikacji desktopowej, służącej do tworzenia danych podstawowych (np. lista maszyn) i generowania raportów, oraz aplikacji mobilnej pozwalającej zeskanowac kod QR maszyny by zarejestrowac awarię. </value>
+  </data>
+  <data name="Learn more" xml:space="preserve">
+    <value>WIĘCEJ</value>
   </data>
   <data name="Techno" xml:space="preserve">
     <value>STOS TECHNOLOGICZNY</value>
   </data>
   <data name="Techno_text" xml:space="preserve">
-    <value>Aplikacja desktopowa jest napisana w Windows Forms, aplikacja mobilna to aplikacja Xamarin Forms. Wymianą danych zajmuje sie aplikacja WebApi.</value>
+    <value>Aplikacja desktopowa jest stworzona w Windows Forms, aplikacja mobilna powstała przy użyciu Xamarin Forms. Wymianą danych zajmuje sie aplikacja WebApi.</value>
   </data>
 </root>

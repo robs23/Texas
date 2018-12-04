@@ -132,6 +132,9 @@
   <data name="Intro_text" xml:space="preserve">
     <value>Moim celem było stworzenie prostej ale użytecznej aplikacji sieciowej z elementami funkcjonalności ERP, głównie by rozwinąć swoje umiejętności programowania w ASP.NET MVC. Jednakże, to z czym skończyłem (póki co) to częściowo rozwinięte panele zarządzania kontem, logistyki, HR i CRM- funkcjonalności na życzenie zaprzyjaźnionej firmy transportowej.  Bardzo chciałbym poświęcić więcej czasu na rozwój pozostałych paneli i funkcji, ale na razie nie mogę znaleźć na to czasu.</value>
   </data>
+  <data name="Learn more" xml:space="preserve">
+    <value>WIĘCEJ</value>
+  </data>
   <data name="Techno" xml:space="preserve">
     <value>STOS TECHNOLOGICZNY</value>
   </data>
