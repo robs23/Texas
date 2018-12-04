@@ -147,8 +147,14 @@
   <data name="Projects" xml:space="preserve">
     <value>PROJECTS</value>
   </data>
+  <data name="QrScanner_text" xml:space="preserve">
+    <value>QR code based data collection system consisting of Android and desktop apps.Click here to see more!</value>
+  </data>
   <data name="Submit" xml:space="preserve">
     <value>SUBMIT</value>
+  </data>
+  <data name="Systo_text" xml:space="preserve">
+    <value>Simple ERP-like web app written in ASP.NET MVC. Click here to see more!</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>WELCOME ON MY HOMEPAGE!</value>

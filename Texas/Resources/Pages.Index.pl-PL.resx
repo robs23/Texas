@@ -147,8 +147,14 @@
   <data name="Projects" xml:space="preserve">
     <value>PROJEKTY</value>
   </data>
+  <data name="QrScanner_text" xml:space="preserve">
+    <value>Oparty na kodach QR system gromadzenia danych składający się z aplikacji na Androida oraz aplikacji desktopowej. Kliknij tutaj aby zobaczyć więcej!</value>
+  </data>
   <data name="Submit" xml:space="preserve">
     <value>WYŚLIJ</value>
+  </data>
+  <data name="Systo_text" xml:space="preserve">
+    <value>Prosta sieciowa aplikacja ERP napisana w ASP.NET MVC. Kliknij tutaj aby zobaczyć więcej!</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>WITAJ NA MOJEJ STRONIE!</value>
