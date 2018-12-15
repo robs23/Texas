@@ -23,21 +23,19 @@ namespace Texas.Pages
         [Required]
         [MinLength(5)]
         public string Message { get; set; }
+        [BindProperty]
+        public string UserCulture { get; set; }
 
         public void OnGet()
         {
 
         }
 
-        //public IActionResult OnPost()
-        //{
-        //    Name = Request.Form["Name"];
-        //    Mail mail = new Mail();
-        //    string textBody = "To jest textbody";
-        //    string htmlBody = "<p><b>To jest htmlBody</b></p>";
-        //    mail.Send("robert.roszak@gmail.com", "Nowa wiadomość na Twojej stronie!", textBody, htmlBody);
-        //    return new JsonResult("Received at " + DateTime.Now);
-        //}
+        public IActionResult OnPostSetCultureAsync()
+        {
+            string xx = UserCulture;
+            return RedirectToPage();
+        }
 
         public IActionResult OnPostSendMailAsync()
         {

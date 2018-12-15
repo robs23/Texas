@@ -52,12 +52,24 @@ namespace Texas
                 new CultureInfo("en-US"),
                 new CultureInfo("pl-PL")
             };
-            app.UseRequestLocalization(new RequestLocalizationOptions
+            //app.UseRequestLocalization(new RequestLocalizationOptions
+            //{
+            //    DefaultRequestCulture = new RequestCulture("en-US"),
+            //    SupportedCultures = supportedCultures,
+            //    SupportedUICultures = supportedCultures
+            //});
+
+            var lo = new RequestLocalizationOptions // Localization Options
             {
                 DefaultRequestCulture = new RequestCulture("en-US"),
                 SupportedCultures = supportedCultures,
                 SupportedUICultures = supportedCultures
-            });
+            };
+
+            var cp = lo.RequestCultureProviders.OfType<CookieRequestCultureProvider>().First(); // Culture provider
+            cp.CookieName = "UserCulture";
+
+            app.UseRequestLocalization(lo);
 
             app.UseStaticFiles();
             app.UseSession();
