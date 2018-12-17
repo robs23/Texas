@@ -45,18 +45,14 @@
                 </ul>
             </nav>
             <nav id="nav-lang">
-                <form method="post" asp-page-handler="SetCulture">
                     <ul>
                         <li>
-                            @*<a href="?culture=en-US">EN</a>*@
-                            <input type="submit" value="EN" class="Culture-changer">d</input>
+                            <a asp-page="/Index" asp-page-handler="SetCulture" asp-route-culture="en-EN">EN</a>
                         </li>
                         <li>
-                            <a href="?culture=pl-PL">PL</a>
+                            <a asp-page="/Index" asp-page-handler="SetCulture" asp-route-culture="pl-PL">PL</a>
                         </li>
                     </ul>
-                </form>
-                
             </nav>
         </div>
     </header>

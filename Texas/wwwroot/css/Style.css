@@ -3,11 +3,6 @@
     color: #b94a48;
 }
 
-.Culture-changer {
-
-    display: block;
-}
-
 #dlg-container {
     position: fixed;
     z-index: 9000;

@@ -31,10 +31,19 @@ namespace Texas.Pages
 
         }
 
-        public IActionResult OnPostSetCultureAsync()
+        public async Task<IActionResult> OnGetSetCultureAsync(string culture)
         {
-            string xx = UserCulture;
-            return RedirectToPage();
+            HttpContext.Response.Cookies.Append("Culture", "c=" + culture + "|uic=" + culture);
+            var returnUrl = Request.Headers["Referer"].ToString();
+            if (returnUrl.Contains("?culture="))
+            {
+                var url = returnUrl.Substring(0, returnUrl.IndexOf("?culture="));
+                return Redirect(url + "?culture=" + culture);
+            }
+            else
+            {
+                return Redirect(returnUrl + "?culture=" + culture);
+            }
         }
 
         public IActionResult OnPostSendMailAsync()

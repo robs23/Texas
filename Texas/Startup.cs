@@ -67,7 +67,7 @@ namespace Texas
             };
 
             var cp = lo.RequestCultureProviders.OfType<CookieRequestCultureProvider>().First(); // Culture provider
-            cp.CookieName = "UserCulture";
+            cp.CookieName = "Culture";
 
             app.UseRequestLocalization(lo);
 
