@@ -52,12 +52,6 @@ namespace Texas
                 new CultureInfo("en-US"),
                 new CultureInfo("pl-PL")
             };
-            //app.UseRequestLocalization(new RequestLocalizationOptions
-            //{
-            //    DefaultRequestCulture = new RequestCulture("en-US"),
-            //    SupportedCultures = supportedCultures,
-            //    SupportedUICultures = supportedCultures
-            //});
 
             var lo = new RequestLocalizationOptions // Localization Options
             {

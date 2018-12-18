@@ -136,6 +136,6 @@
     <value>TECH STACK</value>
   </data>
   <data name="Techno_text" xml:space="preserve">
-    <value>The desktop app was created in Windows Forms, mobile app is Xamarin Forms app. Data exchange is handled by WebApi application.</value>
+    <value>The desktop app was created in Windows Forms, mobile app is Xamarin Forms app for Android. Data exchange is handled by WebApi application.</value>
   </data>
 </root>

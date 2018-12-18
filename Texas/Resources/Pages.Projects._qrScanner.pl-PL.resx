@@ -136,6 +136,6 @@
     <value>STOS TECHNOLOGICZNY</value>
   </data>
   <data name="Techno_text" xml:space="preserve">
-    <value>Aplikacja desktopowa jest stworzona w Windows Forms, aplikacja mobilna powstała przy użyciu Xamarin Forms. Wymianą danych zajmuje sie aplikacja WebApi.</value>
+    <value>Aplikacja desktopowa jest stworzona w Windows Forms, aplikacja mobilna dla systemu Android powstała przy użyciu Xamarin Forms. Wymianą danych zajmuje sie aplikacja WebApi.</value>
   </data>
 </root>
