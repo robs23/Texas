@@ -1,0 +1,18 @@
+﻿@page
+@model Texas.Pages.SystoModel
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = "Systo";
+    Layout = "~/Pages/_Layout.cshtml";
+}
+
+<article id="systo-overview">
+    <section id="row-1"></section>
+    <div class="container">
+        <h3>@Localizer["Modular"]</h3>
+        <p>@Localizer["Modular-text"]</p>
+    </div>
+</article>
+

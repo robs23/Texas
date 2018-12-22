@@ -11,6 +11,13 @@
     background-color: rgba(0,0,0,.5);
 }
 
+hr {
+    border: none;
+    height: 5px;
+    color: #b2b2b2;
+    background-color: #b2b2b2;
+}
+
 #dlgbox {
     position: fixed;
     top: 50%;
@@ -372,6 +379,32 @@ footer {
 }
 
 /* --------------END of Projects.cshtml----------------*/
+
+/* --------------Systo.cshtml----------------*/
+
+#systo-overview #row-1 {
+    background-image: url('../images/projects.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 900px;
+    text-align: justify;
+}
+#systo-overview p {
+    color: rgba(35, 37, 40, 0.7);
+}
+
+#systo-overview h3, h1 {
+    color: #b2b2b2;
+}
+
+
+/* --------------END of Systo.cshtml----------------*/
+
 
 @media only screen and (max-width: 1100px) {
     #bio-img {
