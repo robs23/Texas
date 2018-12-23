@@ -383,7 +383,7 @@ footer {
 /* --------------Systo.cshtml----------------*/
 
 #systo-overview #row-1 {
-    background-image: url('../images/projects.jpg');
+    background-image: url('../images/erp.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
@@ -402,10 +402,11 @@ footer {
     color: #b2b2b2;
 }
 
-
+.feature-img {
+    display:block;
+    margin: 0 auto;
+}
 /* --------------END of Systo.cshtml----------------*/
-
-
 @media only screen and (max-width: 1100px) {
     #bio-img {
         margin-left: 5%;
@@ -500,6 +501,25 @@ footer {
     }
 
     /* --------------END of Projects.cshtml----------------*/
+    /* --------------Systo.cshtml----------------*/
+
+    #systo-overview #row-1 {
+        background-image: url('../images/erp-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 20px 20px;
+    }
+
+    img.feature-img {
+        width: 100%;
+        max-width: 543px;
+    }
+    /* --------------END of Systo.cshtml----------------*/
 }
 
 @media only screen and (max-width: 640px){
