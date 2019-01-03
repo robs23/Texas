@@ -121,6 +121,12 @@
     <value>Modular construction</value>
   </data>
   <data name="Modular-text" xml:space="preserve">
-    <value>The application consist of modules corresponding to spheres of operation of typical company. Every module contains features typically associated to the sphere of operation it represents. For instance, &lt;i&gt;HR&lt;/i&gt; module contains functions related to employee management and &lt;i&gt;Logistics&lt;/i&gt; module concentrates mostly on transport matters.</value>
+    <value>The application consists of modules corresponding to spheres of operation of typical company. Every module contains features typically associated to the sphere of operation it represents. For instance, &lt;i&gt;HR&lt;/i&gt; module contains functions related to employee management and &lt;i&gt;Logistics&lt;/i&gt; module concentrates mostly on transport matters.</value>
+  </data>
+  <data name="Multitenant" xml:space="preserve">
+    <value>Multitenancy</value>
+  </data>
+  <data name="Multitenant-text" xml:space="preserve">
+    <value>By registering directly in the application, the user A creates a unique work space for him and his work mates. In order to share data with his coleagues, the user invites them by their e-mail addresses. An e-mail is sent with personalized registration link, when the invited user B registers using it, he'll be autimatically assingned to user A's work space. The number of users within a single work space is limitless and all created data is accessable for all users of the work space. The number of work spaces is also limitless and no data is shared between two different work spaces.</value>
   </data>
 </root>

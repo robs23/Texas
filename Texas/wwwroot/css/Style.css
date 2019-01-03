@@ -378,6 +378,25 @@ footer {
     color: rgba(35, 37, 40, 0.7);
 }
 
+.project-img {
+    animation-duration: 5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
 /* --------------END of Projects.cshtml----------------*/
 
 /* --------------Systo.cshtml----------------*/
@@ -402,8 +421,13 @@ footer {
     color: #b2b2b2;
 }
 
+.feature-container{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
 .feature-img {
-    display:block;
+    display: block;
     margin: 0 auto;
 }
 /* --------------END of Systo.cshtml----------------*/
