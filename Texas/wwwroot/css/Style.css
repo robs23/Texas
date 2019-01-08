@@ -1,4 +1,12 @@
 ﻿
+.sticky {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
 .field-validation-error {
     color: #b94a48;
 }
@@ -99,13 +107,22 @@ hr {
 
 /*MAIN NAV*/
 
+.nav-default {
+    background-color: rgba(110, 105, 100, 0.7);
+    transition: background-color 500ms linear;
+}
+
+.nav-black {
+    background-color: rgba(0, 0, 0, 1);
+    transition: background-color 500ms linear;
+}
+
 #nav-main ul {
     margin: 0;
     padding: 0;
     position: absolute;
     width: 100%;
     height: 50px;
-    background-color: rgba(110, 105, 100, 0.7);
 }
 
     #nav-main ul li {

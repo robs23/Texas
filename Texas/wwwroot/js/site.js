@@ -12,13 +12,17 @@ $(document).ready(function () {
         e.preventDefault();
     });
 
-    var navY = $('nav').offset().top;
+    var navY = $('#nav-container').offset().top;
     var stickyNav = function () {
         var scrollY = $(window).scrollTop();
         if (scrollY > navY) {
-            $('nav').addClass('sticky');
+            $('#nav-container').addClass('sticky');
+            $('#nav-main > ul').removeClass('nav-default');
+            $('#nav-main > ul').addClass('nav-black');
         } else {
-            $('nav').removeClass('sticky');
+            $('#nav-container').removeClass('sticky');
+            $('#nav-main > ul').removeClass('nav-black');
+            $('#nav-main > ul').addClass('nav-default');
         }
     };
     stickyNav();
