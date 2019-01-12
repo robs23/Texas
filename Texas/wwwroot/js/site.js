@@ -32,3 +32,22 @@ $(document).ready(function () {
         stickyNav();
     });
 });
+
+function SetNavBar() {
+    var checkbox = document.getElementById("nav-toggle");
+    if (checkbox.checked == true) {
+        var navbar = document.getElementById("nav-bar");
+        if (!navbar.classList.contains("nav-bar-scrolled")) {
+            navbar.classList.add("nav-bar-scrolled");
+        }
+    } else {
+        var container = document.getElementById("nav-container");
+        if (!container.classList.contains("sticky")) {
+            var navbar = document.getElementById("nav-bar");
+            if (navbar.classList.contains("nav-bar-scrolled")) {
+                navbar.classList.remove("nav-bar-scrolled");
+            }
+        }
+    }
+}
+
