@@ -37,16 +37,14 @@ function SetNavBar() {
     var checkbox = document.getElementById("nav-toggle");
     if (checkbox.checked == true) {
         var navbar = document.getElementById("nav-bar");
-        if (!navbar.classList.contains("nav-bar-scrolled")) {
-            navbar.classList.add("nav-bar-scrolled");
+        if (!navbar.classList.contains("nav-bar-expanded")) {
+            navbar.classList.add("nav-bar-expanded");
         }
     } else {
         var container = document.getElementById("nav-container");
-        if (!container.classList.contains("sticky")) {
-            var navbar = document.getElementById("nav-bar");
-            if (navbar.classList.contains("nav-bar-scrolled")) {
-                navbar.classList.remove("nav-bar-scrolled");
-            }
+        var navbar = document.getElementById("nav-bar");
+        if (navbar.classList.contains("nav-bar-expanded")) {
+            navbar.classList.remove("nav-bar-expanded");
         }
     }
 }

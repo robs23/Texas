@@ -9,7 +9,7 @@
 
 #nav-bar {
     display: none;
-    transition: background-color 500ms linear;
+    /*transition: background-color 500ms linear;*/
 }
 
 .field-validation-error {
@@ -113,7 +113,7 @@ hr {
 /*MAIN NAV*/
 
 .nav-default {
-    background-color: rgba(110, 105, 100, 0.7);
+    /*background-color: rgba(110, 105, 100, 0.7);*/
     transition: background-color 500ms linear;
 }
 
@@ -142,9 +142,11 @@ hr {
 
         #nav-main ul li:hover {
             text-decoration: none;
-            background-color: rgba(255, 255, 255, 0.3);
+            border-bottom: 5px solid rgb(255,255,255);
+            /*background-color: rgba(255, 255, 255, 0.3);*/
             color: black;
         }
+
 
         #nav-main ul li a {
             display: block;
@@ -177,7 +179,7 @@ hr {
 
         #nav-lang ul li:hover {
             text-decoration: none;
-            background-color: rgba(255, 255, 255, 0.3);
+            border-bottom: 5px solid rgb(255,255,255);
             color: black;
         }
 
@@ -586,7 +588,12 @@ footer {
         position: absolute;
     }
 
-    .nav-bar-scrolled{
+    .nav-bar-scrolled {
+        transition: background-color 500ms linear;
+        background-color: rgba(0,0,0,1);
+    }
+
+    .nav-bar-expanded {
         background-color: rgba(0,0,0,1);
     }
 
@@ -608,9 +615,9 @@ footer {
             transform: rotate(-90deg) translateX(-10px);
         }
 
-    #nav-main ul li:hover {
+    /*#nav-main ul li:hover {
         background-color: #43403d;
-    }
+    }*/
 
     #nav-main ul li {
         width: 100%;
