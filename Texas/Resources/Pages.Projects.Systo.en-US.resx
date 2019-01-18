@@ -117,6 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CRM" xml:space="preserve">
+    <value>Customer relationship management</value>
+  </data>
+  <data name="CRM-text" xml:space="preserve">
+    <value>There's no business separated from other companies and to be competitive, one needs to learn how to manage its relationships professionally. CRM module of the application is great place to start. All users of the work space can keep track of the companies they work with, securely stroring their address,contact and financial data. </value>
+  </data>
+  <data name="HR" xml:space="preserve">
+    <value>Employees' data under control</value>
+  </data>
+  <data name="HR-text" xml:space="preserve">
+    <value>User can create as many employees of his work space as he wants. He can fill in all employee-specific information like name, birthday, nationality, employment date, type of contract, tax number and employee's contact details. Thanks to that he'll have easy access to all the information when needed. The user can also create employee groups to bind employees e.g. of similar role within the company. All created employees are accessable everywhere within the application, so for example the user can later assign an employee as a driver to transport order.</value>
+  </data>
+  <data name="Logistics" xml:space="preserve">
+    <value>Fleet management &amp; transport orders</value>
+  </data>
+  <data name="Logistics-text" xml:space="preserve">
+    <value>The core functionality of the application in its current state is management of transport orders. The user can add transport order, both executed with company's own fleet or by subcontractor. Every order has to have start point and end point, but it's possible to create countless number of intermediate points. The user can choose a driver and a truck from company's own resources, or forwared in case of subcontracted orders.</value>
+  </data>
   <data name="Modular" xml:space="preserve">
     <value>Modular construction</value>
   </data>
@@ -128,5 +146,11 @@
   </data>
   <data name="Multitenant-text" xml:space="preserve">
     <value>By registering directly in the application, the user A creates a unique work space for him and his work mates. In order to share data with his coleagues, the user invites them by their e-mail addresses. An e-mail is sent with personalized registration link, when the invited user B registers using it, he'll be autimatically assingned to user A's work space. The number of users within a single work space is limitless and all created data is accessable for all users of the work space. The number of work spaces is also limitless and no data is shared between two different work spaces.</value>
+  </data>
+  <data name="Reporting" xml:space="preserve">
+    <value>Reporting</value>
+  </data>
+  <data name="Reporting-text" xml:space="preserve">
+    <value />
   </data>
 </root>

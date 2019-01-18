@@ -117,6 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CRM" xml:space="preserve">
+    <value>Zarządzanie relacjami z klientami</value>
+  </data>
+  <data name="CRM-text" xml:space="preserve">
+    <value>Nie ma biznesu oddzielonego od innych firm i aby być konkurencyjnym, trzeba nauczyć się profesjonalnie zarządzać swoimi relacjami. Moduł CRM aplikacji jest świetnym miejscem do rozpoczęcia. Wszyscy użytkownicy przestrzeni roboczej mogą prowadzić rejestr firm, z którymi pracują, bezpiecznie przechowując ich adres oraz ich dane kontaktowe i finansowe.</value>
+  </data>
+  <data name="HR" xml:space="preserve">
+    <value>Dane pracowników pod kontrolą</value>
+  </data>
+  <data name="HR-text" xml:space="preserve">
+    <value>Użytkownik może stworzyć nieograniczoną liczbę pracowników w swojej przestrzeni roboczej. Może on wypełnić wszystkie informacje dotyczące pracownika, takie jak imię i nazwisko, datę urodzenia, obywatelstwo, datę zatrudnienia, rodzaj umowy, numer podatkowy a także dane kontaktowe pracownika. Dzięki temu będzie miał łatwy dostęp do wszystkich informacji w razie potrzeby. Użytkownik może również tworzyć grupy pracowników do wiązania pracowników, np. pełniących podobne role w firmie. Wszyscy stworzeni pracownicy są dostępni wszędzie w obrębie aplikacji, więc na przykład użytkownik może później przypisać pracownika jako kierowcę do zlecenia transportowego.</value>
+  </data>
+  <data name="Logistics" xml:space="preserve">
+    <value>Zarządzanie flotą i zlecenia transportowe</value>
+  </data>
+  <data name="Logistics-text" xml:space="preserve">
+    <value>Podstawową funkcjonalnością aplikacji w jej obecnym stanie jest zarządzanie zleceniami transportowymi. Użytkownik może dodać zlecenie transportowe, realizowane zarówno za pomocą własnej floty firmy, jak i podwykonawcy. Każde zamówienie musi mieć punkt początkowy i końcowy, ale możliwe jest również utworzenie niezliczonej liczby punktów pośrednich. Użytkownik może wybrać kierowcę i ciężarówkę z zasobów własnych firmy lub spedytora w przypadku zleceń podwykonawstwa.</value>
+  </data>
   <data name="Modular" xml:space="preserve">
     <value>Modułowa budowa</value>
   </data>
