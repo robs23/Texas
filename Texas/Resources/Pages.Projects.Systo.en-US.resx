@@ -148,9 +148,9 @@
     <value>By registering directly in the application, the user A creates a unique work space for him and his work mates. In order to share data with his coleagues, the user invites them by their e-mail addresses. An e-mail is sent with personalized registration link, when the invited user B registers using it, he'll be autimatically assingned to user A's work space. The number of users within a single work space is limitless and all created data is accessable for all users of the work space. The number of work spaces is also limitless and no data is shared between two different work spaces.</value>
   </data>
   <data name="Reporting" xml:space="preserve">
-    <value>Reporting</value>
+    <value>Put it on paper!</value>
   </data>
   <data name="Reporting-text" xml:space="preserve">
-    <value />
+    <value>Every once in a while one needs to get printable version of the route, either to  hand it out to the driver or to send it to some one in e-mail. Whatever the reason, the user can obtain printable PDF report of the route with a single click!</value>
   </data>
 </root>

@@ -147,4 +147,10 @@
   <data name="Multitenant-text" xml:space="preserve">
     <value>Rejestrując się bezpośrednio w aplikacji, użytkownik A tworzy wyjątkową przestrzeń roboczą dla niego i jego współpracowników. Aby umożliwić dzielenie danych ze współpracownikami, użytkownik zaprasza ich za pomocą adresów e-mail. E-mail zostanie wysłany wraz ze spersonalizowanym odnośnikiem do rejestracji, gdy zaproszony użytkownik B zarejestruje się przy jego użyciu, zostanie automatycznie przypisany do przestrzeni roboczej użytkownika A. Liczba użytkowników w jednej przestrzeni roboczej jest nieograniczona, a wszystkie utworzone dane są dostępne dla wszystkich użytkowników tej przestrzeni. Liczba przestrzeni roboczych jest również nieograniczona i żadne dane nie są dzielone między dwoma różnymi przestrzeniami</value>
   </data>
+  <data name="Reporting" xml:space="preserve">
+    <value>Przelej to na papier!</value>
+  </data>
+  <data name="Reporting-text" xml:space="preserve">
+    <value>Od czasu do czasu trzeba uzyskać wydruk trasy, albo aby przekazać ją kierowcy, albo wysłać do kogoś w e-mailu. Bez względu na przyczynę, użytkownik może uzyskać drukoalny PDF raportu z trasy za pomocą jednego kliknięcia!</value>
+  </data>
 </root>
