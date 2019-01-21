@@ -1,0 +1,48 @@
+﻿@page
+@model Texas.Pages.Projects.QrScannerModel
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = "QrScanner";
+    Layout = "~/Pages/_Layout.cshtml";
+}
+
+<article id="qrScanner-overview" class="app-overview">
+    <section id="row-1"></section>
+    <section id="features">
+        <div class="container">
+            <div class="feature-container">
+                <h3>@Localizer["On-the-move"]</h3>
+                <p>@Localizer["On-the-move-text"]</p>
+                <img src="~/images/Systo_modules.png" class="feature-img" />
+            </div>
+            <div class="feature-container">
+                <h3>@Localizer["Multitenant"]</h3>
+                <p>@Localizer["Multitenant-text"]</p>
+                <img src="~/images/systo_multitenancy.png" class="feature-img" />
+            </div>
+            <div class="feature-container">
+                <h3>@Localizer["HR"]</h3>
+                <p>@Localizer["HR-text"]</p>
+                <img src="~/images/systo_hr.png" class="feature-img" />
+            </div>
+            <div class="feature-container">
+                <h3>@Localizer["CRM"]</h3>
+                <p>@Localizer["CRM-text"]</p>
+                <img src="~/images/systo_crm.png" class="feature-img" />
+            </div>
+            <div class="feature-container">
+                <h3>@Localizer["Logistics"]</h3>
+                <p>@Localizer["Logistics-text"]</p>
+                <img src="~/images/systo_logistics.png" class="feature-img" />
+            </div>
+            <div class="feature-container">
+                <h3>@Localizer["Reporting"]</h3>
+                <p>@Localizer["Reporting-text"]</p>
+                <img src="~/images/systo_printable.png" class="feature-img" />
+            </div>
+        </div>
+
+    </section>
+</article>

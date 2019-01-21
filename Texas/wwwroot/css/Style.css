@@ -437,11 +437,11 @@ footer {
     width: 900px;
     text-align: justify;
 }
-#systo-overview p {
+#app-overview p {
     color: rgba(35, 37, 40, 0.7);
 }
 
-#systo-overview h3, h1 {
+#app-overview h3, h1 {
     color: #b2b2b2;
 }
 
@@ -454,6 +454,17 @@ footer {
     display: block;
     margin: 0 auto;
 }
+/* --------------END of Systo.cshtml----------------*/
+
+/* --------------QrScanner.cshtml----------------*/
+
+#qrScanner-overview #row-1 {
+    background-image: url('../images/qr.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
 /* --------------END of Systo.cshtml----------------*/
 @media only screen and (max-width: 1100px) {
     #bio-img {
@@ -568,6 +579,17 @@ footer {
         max-width: 543px;
     }
     /* --------------END of Systo.cshtml----------------*/
+
+    /* --------------QrScanner.cshtml----------------*/
+
+    #qrScanner-overview #row-1 {
+        background-image: url('../images/qr-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+    }
+
+    /* --------------END of QrScanner.cshtml----------------*/
 }
 
 @media only screen and (max-width: 640px){
