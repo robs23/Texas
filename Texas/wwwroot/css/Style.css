@@ -122,6 +122,7 @@ hr {
     transition: background-color 500ms linear;
 }
 
+
 #nav-main ul {
     margin: 0;
     padding: 0;
@@ -190,6 +191,10 @@ hr {
             color: white;
             font-size: 20px;
         }
+
+#nav-main ul li a.active-page {
+    color: #999999;
+}
 
         /* --------------Index.cshtml styling----------------*/
 

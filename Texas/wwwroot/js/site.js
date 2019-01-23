@@ -31,6 +31,12 @@ $(document).ready(function () {
     $(window).scroll(function () {
         stickyNav();
     });
+
+    var ident = document.getElementsByClassName("page-id");
+    for (var i = 0; i < ident.length; i++) {
+        var pageName = ident[i].innerHTML = ident[i].id;
+    }
+
 });
 
 function SetNavBar() {
