@@ -66,7 +66,7 @@ namespace Texas.TagHelpers
 
             if (Page != null)
             {
-                if (Page.ToLower() == "/Index" && _contextAccessor.HttpContext.Request.Path.Value.ToLower() == "/")
+                if (Page == "/Index" && _contextAccessor.HttpContext.Request.Path.Value.ToLower() == "/")
                 {
                     return true;
                 }
@@ -93,7 +93,7 @@ namespace Texas.TagHelpers
             var classAttr = output.Attributes.FirstOrDefault(a => a.Name == "class");
             if (classAttr == null)
             {
-                classAttr = new TagHelperAttribute("class", "active");
+                classAttr = new TagHelperAttribute("class", "active-page");
                 output.Attributes.Add(classAttr);
             }
             else if (classAttr.Value == null || classAttr.Value.ToString().IndexOf("active") < 0)

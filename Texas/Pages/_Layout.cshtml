@@ -32,10 +32,10 @@
 
                 <ul id="nav-bg" class="nav-default">
                     <li>
-                        <a asp-page="/Index" class="active-page" asp->@Localizer["Home"]</a>
+                        <a asp-page="/Index" is-active-route>@Localizer["Home"]</a>
                     </li>
                     <li>
-                        <a asp-page="/Projects">@Localizer["Projects"]</a>
+                        <a asp-page="/Projects" is-active-route>@Localizer["Projects"]</a>
                     </li>
                     <li>
                         <a href="#">@Localizer["Blog"]</a>
