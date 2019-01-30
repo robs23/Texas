@@ -120,7 +120,10 @@
   <data name="On-the-move" xml:space="preserve">
     <value>Collecting data on the move</value>
   </data>
-  <data name="On-the-move-text" xml:space="preserve">
-    <value>All the resources that the company would like to keep track of, have been labeled with QR codes representing their unique number. To register new incident for a resource, an employee scans its qr code in the mobile app and creates new incident. After filling in incident type, he can provide a comment and press &lt;i&gt;Start&lt;/i&gt; button. </value>
+  <data name="On-the-move-text-1" xml:space="preserve">
+    <value>All the resources that the company would like to keep track of, have been labeled with QR codes representing their unique number.</value>
+  </data>
+  <data name="On-the-move-text-2" xml:space="preserve">
+    <value>To register new incident for a resource, an employee scans its qr code in the mobile app and creates new incident. After filling in incident type, he can provide a comment and press &lt;i&gt;Start&lt;/i&gt; button to start registering incident's duration.</value>
   </data>
 </root>
