@@ -41,7 +41,6 @@ namespace Texas
             env.EnvironmentName = EnvironmentName.Development;
             if (env.IsDevelopment())
             {
-                app.UseBrowserLink();
                 app.UseDeveloperExceptionPage();
             }
             else
