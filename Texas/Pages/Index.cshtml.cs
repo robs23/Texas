@@ -33,7 +33,11 @@ namespace Texas.Pages
 
         public async Task<IActionResult> OnGetSetCultureAsync(string culture)
         {
-            HttpContext.Response.Cookies.Append("Culture", "c=" + culture + "|uic=" + culture);
+            HttpContext.Response.Cookies.Append("Culture", "c=" + culture + "|uic=" + culture,
+                new Microsoft.AspNetCore.Http.CookieOptions
+                {
+                    Expires = DateTimeOffset.Now.AddMonths(3)
+                });
             var returnUrl = Request.Headers["Referer"].ToString();
             if (returnUrl.Contains("?culture="))
             {
