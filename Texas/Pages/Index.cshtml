@@ -60,7 +60,7 @@
     </section>
     <section id="row-4">
         <h1>@Localizer["Contact Me"]</h1>
-        <form method="post" asp-page-handler="SendMail">
+        <form method="post" asp-page-handler="SendMail" onsubmit="unclickable()">
             <div id="contact-inputs" class="form-horizontal">
                 <div id="contact-name-mail">
                     <input type="text" placeholder=@Localizer["Name"] id="contact-name" class="form-control" asp-for="Name" />
@@ -71,7 +71,7 @@
                 <textarea type="text" placeholder=@Localizer["Message"] id="contact-message" asp-for="Message"></textarea>
                 <span asp-validation-for="Message"></span>
             </div>
-            <input type="submit" onclick="unclickable()" value=@Localizer["Submit"] id="contact-submit" class="btn btn-primary" />
+            <input type="submit" value=@Localizer["Submit"] id="contact-submit" class="btn btn-primary" />
         </form>
     </section>
 </article>
