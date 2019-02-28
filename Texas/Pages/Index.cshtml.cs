@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Texas.Models;
@@ -33,21 +35,11 @@ namespace Texas.Pages
 
         public async Task<IActionResult> OnGetSetCultureAsync(string culture)
         {
-            HttpContext.Response.Cookies.Append("Culture", "c=" + culture + "|uic=" + culture,
-                new Microsoft.AspNetCore.Http.CookieOptions
-                {
-                    Expires = DateTimeOffset.Now.AddMonths(3)
-                });
             var returnUrl = Request.Headers["Referer"].ToString();
-            if (returnUrl.Contains("?culture="))
-            {
-                var url = returnUrl.Substring(0, returnUrl.IndexOf("?culture="));
-                return Redirect(url + "?culture=" + culture);
-            }
-            else
-            {
-                return Redirect(returnUrl + "?culture=" + culture);
-            }
+            HttpContext.Response.Cookies.Append(CookieRequestCultureProvider.DefaultCookieName,
+                                                CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
+                                                new CookieOptions() { Expires = DateTimeOffset.Now.AddMonths(3) });
+            return new RedirectResult(returnUrl);
         }
 
         public IActionResult OnPostSendMailAsync()
