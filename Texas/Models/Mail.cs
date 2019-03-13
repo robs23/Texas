@@ -20,7 +20,7 @@ namespace Texas.Models
 
             Email = new MailMessage();
             Smtp = new SmtpClient();
-            Smtp.Host = "poczta.webserwer.pl";
+            Smtp.Host = "smtp.webio.pl";
             Smtp.EnableSsl = true;
             Smtp.Port = 587;//or 465 or 25 or 587
             Smtp.UseDefaultCredentials = false;

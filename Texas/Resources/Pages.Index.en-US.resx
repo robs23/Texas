@@ -121,7 +121,7 @@
     <value>BIO</value>
   </data>
   <data name="Bio text" xml:space="preserve">
-    <value>I've been programming for around 6 years. Most of this time I spent creating Visual Basic 6 apps for Windows and VBA apps within MS Office Suite (Excel &amp; Access). I also experimented briefly with Java and Python, but due to the difficult distribution of such applications in the Windows environment, I abandoned this topic. From 2017 I create applications in .NET - initially only for Windows in Windows Forms, later also for the web in Asp.Net MVC and recently also mobile using Xamarin.Forms.</value>
+    <value>Experienced .NET developer and avid coffee drinker. In my everyday life I try to combine my passion for programming with work in international logistics. I try to keep up with the constantly growing IT industry and try the latest technologies. I code for PC (mostly WinForms), mobiles (Xamarin forms) and the web (ASP.NET MVC/Razor Pages). I'm big fan of widely understood technology - from consumer electronics through AI to space exploration! </value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Close</value>
@@ -160,6 +160,6 @@
     <value>WELCOME ON MY HOMEPAGE!</value>
   </data>
   <data name="Welcome text" xml:space="preserve">
-    <value>This is my place on the web. What's the purpose of it? Well, it's going be mostly porftolio site where I'll be showing projects I've done or I'm working on at the moment.</value>
+    <value>This is my place on the web. What's the purpose of it? Well, it's going be mostly porftolio site where I'll be showing projects I've done or I'm working on at the moment. Have a look around here, check my blog or get in touch with me - I'm eager to hear from you!</value>
   </data>
 </root>

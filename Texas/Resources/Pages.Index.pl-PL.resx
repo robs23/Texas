@@ -121,7 +121,7 @@
     <value>O MNIE</value>
   </data>
   <data name="Bio text" xml:space="preserve">
-    <value>Programuję od ok. 6 lat. Większość tego czasu spędziłem robiąc aplikację w Visual Basic 6 dla Windows i aplikacje VBA dla pakietu MS Office (Excel i Access). Eksperymentowałem również króko z Javą i Pythonem, ale porzuciłem ten temat z powodu utrudnionej dystrybucji aplickacji w systemie Windows. Od 2017 roku tworzę aplikację w technologii .NET - początkowo tylko dla Windows w technologii Windows Forms, następnie również aplikacje sieciowe w Asp.Net MVC a ostatnio również aplikacje mobilne przy użyciu Xamarin.Forms.</value>
+    <value>Doświadczony programista .NET i miłośnik kawy. W codziennym życiu staram się łączyć pasję do programowania z pracą w logistyce międzynarodowej.  Staram się nadążyć za ciągle rozwijającą się branżą IT i spróbować najnowszych nowinek.  Koduję dla PC (głównie WinForms), smartfonów (Xamarin forms) i dla sieci (ASP.NET MVC / Razor Pages). Jestem wielkim fanem szeroko rozumianej technologii - od elektroniki użytkowej przez AI po eksplorację kosmosu! </value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Zamknij</value>
@@ -160,6 +160,6 @@
     <value>WITAJ NA MOJEJ STRONIE!</value>
   </data>
   <data name="Welcome text" xml:space="preserve">
-    <value>To jest moje miejsce w sieci. Jaki jest jego cel? No cóż, to ma być głównie strona zawierająca porfolio zrealizowanych projektów, jak również tych nad którymi obecnie pracuję.</value>
+    <value>To jest moje miejsce w sieci. Jaki jest jego cel? No cóż, to ma być głównie strona zawierająca porfolio zrealizowanych projektów, jak również tych nad którymi obecnie pracuję. Rozejrzyj się tutaj, sprawdź mojego bloga lub skontaktuj się ze mną - chętnie cię usłyszę!</value>
   </data>
 </root>
