@@ -695,7 +695,7 @@ footer {
 }
 
 @media only screen and (max-width: 400px) {
-    .project-box {
+    .project-box, #project-text {
         width: 90%;
     }
 
