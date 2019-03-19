@@ -126,4 +126,10 @@
   <data name="On-the-move-text-2" xml:space="preserve">
     <value>Aby zarejestrować nowe zdarzenie dla zasobu, pracownik skanuje jego kod QR w aplikacji mobilnej i tworzy nowe zdarzenie. Po wypełnieniu informacji o typie zdarzenia,  pracownik może podać komentarz i nacisnąć przycisk &lt;i&gt; Start &lt;/i&gt; aby rozpocząć naliczanie czasu trwania zdarzenia.</value>
   </data>
+  <data name="On-the-move-text-3" xml:space="preserve">
+    <value>W przypadku pojedynczego zasobu może być wiele otwartych incydentów różnego rodzaju naraz. Każde zdarzenie może mieć jeden z 4 statusów: zaplanowany, rozpoczęty, wstrzymany, zakończony.</value>
+  </data>
+  <data name="On-the-move-text-4" xml:space="preserve">
+    <value>Gdy obsługa zgłoszenia została zakończona, pracownik naciska przycisk &lt;i&gt;Zakończ&lt;/i&gt; i naliczanie czasu zostaje zakończone. Informacja zawierająca szczegóły zdarzenia, czas trwania oraz informacje o obsługujących zostaje zapisana w bazie danych.</value>
+  </data>
 </root>
