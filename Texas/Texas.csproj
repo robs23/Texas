@@ -6,6 +6,7 @@
     <Content Remove="wwwroot\images\Laptop_wallet_graph.png" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Ducksoft.NetCore.Razor.Sitemap" Version="1.0.103" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.1" />
   </ItemGroup>

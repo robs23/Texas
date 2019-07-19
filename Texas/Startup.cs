@@ -3,13 +3,17 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
+using Ducksoft.NetCore.Razor.Sitemap.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Rewrite;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Texas.Static;
 
 namespace Texas
 {
@@ -33,7 +37,9 @@ namespace Texas
               .AddSessionStateTempDataProvider();
             services.AddSession();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.ConfigureMvcRazorPages(CompatibilityVersion.Version_2_2, "/Index", "Home");
         }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -46,7 +52,10 @@ namespace Texas
             else
             {
                 app.UseExceptionHandler("/Error");
+                
             }
+            var options = new RewriteOptions().AddRedirectToHttps();
+            app.UseRewriter(options);
 
             var supportedCultures = new[]
             {
