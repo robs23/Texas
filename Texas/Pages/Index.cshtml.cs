@@ -36,6 +36,10 @@ namespace Texas.Pages
         public async Task<IActionResult> OnGetSetCultureAsync(string culture)
         {
             var returnUrl = Request.Headers["Referer"].ToString();
+            if (string.IsNullOrWhiteSpace(returnUrl))
+            {
+                returnUrl = string.Format("{0}://{1}{2}", Request.Scheme, Request.Host, Request.PathBase);
+            }
             HttpContext.Response.Cookies.Append(CookieRequestCultureProvider.DefaultCookieName,
                                                 CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
                                                 new CookieOptions() { Expires = DateTimeOffset.Now.AddMonths(3) });

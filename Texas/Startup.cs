@@ -44,18 +44,21 @@ namespace Texas
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            env.EnvironmentName = EnvironmentName.Development;
+            #if DEBUG
+                env.EnvironmentName = EnvironmentName.Development;
+            #endif
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                
             }
             else
             {
                 app.UseExceptionHandler("/Error");
-                
+                var options = new RewriteOptions().AddRedirectToHttps();
+                app.UseRewriter(options);
             }
-            var options = new RewriteOptions().AddRedirectToHttps();
-            app.UseRewriter(options);
+            
 
             var supportedCultures = new[]
             {
