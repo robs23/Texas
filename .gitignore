@@ -261,3 +261,4 @@ __pycache__/
 *.pyc
 
 Texas/Static/Secrets.cs
+**/appsettings.production.json
