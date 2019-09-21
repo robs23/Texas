@@ -25,7 +25,7 @@ namespace Texas.Models
             Smtp.Port = 587;//or 465 or 25 or 587
             Smtp.UseDefaultCredentials = false;
             var ConfManager = Static.Secrets.NoReplyPassword;
-            Smtp.Credentials = new System.Net.NetworkCredential("no-reply@systo.pl", ConfManager);
+            Smtp.Credentials = new System.Net.NetworkCredential("no-reply@rr-soft.pl", ConfManager);
             Smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
         }
         public void Send(string inputEmail, string subject, string textBody, string htmlBody)
@@ -34,7 +34,7 @@ namespace Texas.Models
             {
                 //creating an email
 
-                MailAddress fromAddress = new MailAddress("no-reply@systo.pl", "systo.pl");
+                MailAddress fromAddress = new MailAddress("no-reply@rr-soft.pl", "no-reply@rr-soft.pl");
                 this.Email.From = fromAddress;
                 this.Email.To.Add(inputEmail);
                 this.Email.Subject = subject;
