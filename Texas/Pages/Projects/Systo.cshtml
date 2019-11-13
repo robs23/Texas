@@ -15,12 +15,12 @@
             <div class="feature-container">
                 <h3>@Localizer["Modular"]</h3>
                 <p>@Localizer["Modular-text"]</p>
-                <img src="~/images/Systo_modules.png" class="feature-img" />
+                <img src="~/images/Systo_modules.png" id="syst_modules" class="feature-img" />
             </div>
             <div class="feature-container">
                 <h3>@Localizer["Multitenant"]</h3>
                 <p>@Localizer["Multitenant-text"]</p>
-                <img src="~/images/systo_multitenancy.png" class="feature-img" />
+                <img src="~/images/systo_multitenancy.png" id="systo_multitenancy" class="feature-img" />
             </div>
             <div class="feature-container">
                 <h3>@Localizer["HR"]</h3>
@@ -43,7 +43,21 @@
                 <img src="~/images/systo_printable.png" class="feature-img" />
             </div>
         </div>
-        
+
     </section>
 </article>
+
+@section scripts{
+    <script type="text/javascript">
+        window.addEventListener('load', function () {
+            var image = this.document.getElementById('systo_multitenancy');
+            var downloadingImage = new Image();
+            downloadingImage.onload = function () {
+                image.src = this.src;
+            };
+            downloadingImage.src = "~/images/Async/systo_multitenancy.gif";
+        })
+    </script>
+    
+}
 
