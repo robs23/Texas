@@ -55,7 +55,8 @@
             downloadingImage.onload = function () {
                 image.src = this.src;
             };
-            downloadingImage.src = "~/images/Async/systo_multitenancy.gif";
+            downloadingImage.src = @System.IO.Path.Combine(@Model.WebRootPath,"images","Async", "systo_multitenancy.gif");
+            //downloadingImage.src = "http://localhost:49531/images/Async/systo_multitenancy.gif";
         })
     </script>
     
