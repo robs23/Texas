@@ -15,7 +15,7 @@
             <div class="feature-container">
                 <h3>@Localizer["Modular"]</h3>
                 <p>@Localizer["Modular-text"]</p>
-                <img src="~/images/Systo_modules.png" id="syst_modules" class="feature-img" />
+                <img src="~/images/Systo_modules.png" id="systo_modules" class="feature-img" />
             </div>
             <div class="feature-container">
                 <h3>@Localizer["Multitenant"]</h3>
@@ -25,22 +25,22 @@
             <div class="feature-container">
                 <h3>@Localizer["HR"]</h3>
                 <p>@Localizer["HR-text"]</p>
-                <img src="~/images/systo_hr.png" class="feature-img" />
+                <img src="~/images/systo_hr.png" id="systo_hr" class="feature-img" />
             </div>
             <div class="feature-container">
                 <h3>@Localizer["CRM"]</h3>
                 <p>@Localizer["CRM-text"]</p>
-                <img src="~/images/systo_crm.png" class="feature-img" />
+                <img src="~/images/systo_crm.png" id="systo_crm" class="feature-img" />
             </div>
             <div class="feature-container">
                 <h3>@Localizer["Logistics"]</h3>
                 <p>@Localizer["Logistics-text"]</p>
-                <img src="~/images/systo_logistics.png" class="feature-img" />
+                <img src="~/images/systo_logistics.png" id="systo_logistics" class="feature-img" />
             </div>
             <div class="feature-container">
                 <h3>@Localizer["Reporting"]</h3>
                 <p>@Localizer["Reporting-text"]</p>
-                <img src="~/images/systo_printable.png" class="feature-img" />
+                <img src="~/images/systo_printable.png" id="systo_printable" class="feature-img" />
             </div>
         </div>
 
@@ -48,17 +48,57 @@
 </article>
 
 @section scripts{
+    <script src="~/js/feature-img.js" asp-append-version="true"></script>
     <script type="text/javascript">
+        var images = new Array();
+
         window.addEventListener('load', function () {
+            jQuery('.feature-img').each(function () {
+                var currentElement = $(this);
+                var currentElementId = currentElement.attr('id');
+                var el = new FeatureImg(currentElementId, false, false);
+                images.push(el);
+            })
             var image = this.document.getElementById('systo_multitenancy');
             var downloadingImage = new Image();
             downloadingImage.onload = function () {
                 image.src = this.src;
             };
-            downloadingImage.src = @System.IO.Path.Combine(@Model.WebRootPath,"images","Async", "systo_multitenancy.gif");
-            //downloadingImage.src = "http://localhost:49531/images/Async/systo_multitenancy.gif";
-        })
+            downloadingImage.src = "/images/Async/systo_multitenancy.gif";
+        });
+        function Utils() {
+
+        }
+
+        Utils.prototype = {
+            constructor: Utils,
+            isElementInView: function (element, fullyInView) {
+                var pageTop = $(window).scrollTop();
+                var pageBottom = pageTop + $(window).height();
+                var elementTop = $(element).offset().top;
+                var elementBottom = elementTop + $(element).height();
+
+                if (fullyInView === true) {
+                    return ((pageTop < elementTop) && (pageBottom > elementBottom));
+                } else {
+                    return ((elementTop <= pageBottom) && (elementBottom >= pageTop));
+                }
+            }
+        };
+        window.addEventListener('scroll', function () {
+            for (var i = 0; i < images.length; i++) {
+                var isElementInView = Utils.isElementInView($('#' + images[i].id), true);
+
+                if (isElementInView) {
+                    images[i].isDisplayed = true;
+                } else {
+                }
+            }
+
+        });
+
+        var Utils = new Utils();
     </script>
-    
+
 }
 
