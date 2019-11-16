@@ -56,15 +56,11 @@
             jQuery('.feature-img').each(function () {
                 var currentElement = $(this);
                 var currentElementId = currentElement.attr('id');
-                var el = new FeatureImg(currentElementId, false, false);
+                var img = window.document.getElementById(currentElementId);
+                var el = new FeatureImg(currentElementId, false, false, img);
+                el.download();
                 images.push(el);
             })
-            var image = this.document.getElementById('systo_multitenancy');
-            var downloadingImage = new Image();
-            downloadingImage.onload = function () {
-                image.src = this.src;
-            };
-            downloadingImage.src = "/images/Async/systo_multitenancy.gif";
         });
         function Utils() {
 
@@ -85,12 +81,13 @@
                 }
             }
         };
+
         window.addEventListener('scroll', function () {
             for (var i = 0; i < images.length; i++) {
                 var isElementInView = Utils.isElementInView($('#' + images[i].id), true);
-
-                if (isElementInView) {
+                if (isElementInView && images[i].isDownloaded) {
                     images[i].isDisplayed = true;
+                    images[i].image.src = "/images/Async/" + images[i].id + ".gif";
                 } else {
                 }
             }
