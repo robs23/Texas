@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Localization;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using Microsoft.AspNetCore.Rewrite;
@@ -21,7 +21,7 @@ namespace Texas
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration, IHostingEnvironment env)
+        public Startup(IConfiguration configuration, IWebHostEnvironment env)
         {
             var builder = new ConfigurationBuilder()
             .SetBasePath(env.ContentRootPath)
@@ -39,13 +39,13 @@ namespace Texas
         {
             //services.AddMvc();
             services.AddLocalization(options => options.ResourcesPath = "Resources");
-            services.AddMvc()
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddSession();
+            services.AddMvc(options => options.EnableEndpointRouting = false)
               .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
               .AddDataAnnotationsLocalization()
               .AddSessionStateTempDataProvider();
-            services.AddSession();
-            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            services.ConfigureMvcRazorPages(CompatibilityVersion.Version_2_2, "/Index", "Home");
+            //services.ConfigureMvcRazorPages(CompatibilityVersion.Version_3_0, "/Index", "Home");
             // Register the Google Analytics configuration
             services.Configure<GoogleAnalyticsOptions>(options => Configuration.GetSection("GoogleAnalytics").Bind(options));
 
@@ -55,10 +55,10 @@ namespace Texas
 
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             #if DEBUG
-                env.EnvironmentName = EnvironmentName.Development;
+                env.EnvironmentName = Microsoft.Extensions.Hosting.Environments.Development;
             #endif
             if (env.IsDevelopment())
             {
@@ -90,10 +90,12 @@ namespace Texas
             //cp.CookieName = "Culture";
 
             app.UseRequestLocalization(lo);
-
-            app.UseStaticFiles();
             app.UseSession();
+            app.UseStaticFiles();
+            app.UseRouting();
             app.UseMvc();
+            //app.UseEndpoints(endpoints => endpoints.MapRazorPages());
+
         }
     }
 }

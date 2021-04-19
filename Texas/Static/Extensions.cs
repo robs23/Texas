@@ -18,8 +18,6 @@ namespace Texas.Static
                 .AddRazorPagesOptions(options =>
                 {
                     var isSupportAreas = !string.IsNullOrWhiteSpace(startPageArea);
-                    options.AllowAreas = isSupportAreas;
-                    options.AllowMappingHeadRequestsToGetHandler = true;
                     if (isSupportAreas)
                     {
                         options.Conventions.AddAreaPageRoute(startPageArea, startPageUrl, string.Empty);
