@@ -121,7 +121,7 @@
     <value>BIO</value>
   </data>
   <data name="Bio text" xml:space="preserve">
-    <value>Experienced .NET developer and avid coffee drinker. In my everyday life I try to combine my passion for programming with work in international logistics. I try to keep up with the constantly growing IT industry and try the latest technologies. I code for PC (mostly WinForms), mobiles (Xamarin forms) and the web (ASP.NET MVC/Razor Pages). I'm big fan of widely understood technology - from consumer electronics through AI to space exploration! </value>
+    <value>Experienced .NET developer and avid coffee drinker. In my everyday life I try to combine my passion for programming with work in international logistics. I try to keep up with the constantly growing IT industry and try the latest technologies. I code for PC (mostly WinForms), mobiles (Xamarin forms) and the web (ASP.NET MVC/Razor Pages). Outside .NET, I use Angular and try to support my legacy VBA/SQL projects. I'm big fan of widely understood technology - from consumer electronics through AI to space exploration! 2020 locked us all in our homes, which in my case drew my interest to smart home subject. If I manage to find some spare time, I devote it to improving my current set-up, whether by integrating an additional sensor or creating new automations in Home Assistant :)</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Close</value>

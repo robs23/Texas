@@ -121,7 +121,7 @@
     <value>O MNIE</value>
   </data>
   <data name="Bio text" xml:space="preserve">
-    <value>Doświadczony programista .NET i miłośnik kawy. W codziennym życiu staram się łączyć pasję do programowania z pracą w logistyce międzynarodowej.  Staram się nadążyć za ciągle rozwijającą się branżą IT i spróbować najnowszych nowinek.  Koduję dla PC (głównie WinForms), smartfonów (Xamarin forms) i dla sieci (ASP.NET MVC / Razor Pages). Jestem wielkim fanem szeroko rozumianej technologii - od elektroniki użytkowej przez AI po eksplorację kosmosu! </value>
+    <value>Doświadczony programista .NET i miłośnik kawy. W codziennym życiu staram się łączyć pasję do programowania z pracą w logistyce międzynarodowej.  Staram się nadążyć za ciągle rozwijającą się branżą IT i spróbować najnowszych nowinek.  Koduję dla PC (głównie WinForms), smartfonów (Xamarin forms) i dla sieci (ASP.NET MVC / Razor Pages). Poza .NET, korzystam również z Angulara oraz utrzymuje swoje dawne projekty VBA/SQL. Jestem wielkim fanem szeroko rozumianej technologii - od elektroniki użytkowej przez AI po eksplorację kosmosu! Rok 2020 zamknął nas wszystkich w domach, co w moim przypadku zaowocowało zainteresowaniem tematyką intelignetnego domu. Jeśli uda mi się wygospodarować jakąś wolną chwilę, poświęcam ją na usprawnienie swojego aktualnego set-upu, czy to integrując jakiś dodatkowy czujnik, czy tworząc nowe automatyzacje w Home Assistant :) </value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Zamknij</value>

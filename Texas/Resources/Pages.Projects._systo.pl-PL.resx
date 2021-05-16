@@ -121,7 +121,7 @@
     <value>DEMO</value>
   </data>
   <data name="Demo_text" xml:space="preserve">
-    <value>Możesz wypróbować aplikację &lt;a href="https://systo.rr-soft.pl"&gt;tutaj&lt;/a&gt;, albo tworząc sobie konto użytkownika albo używając danych konta demostracyjnego: &lt;br /&gt;
+    <value>Możesz wypróbować aplikację &lt;a href="https://systo.roszak.dev"&gt;tutaj&lt;/a&gt;, albo tworząc sobie konto użytkownika albo używając danych konta demostracyjnego: &lt;br /&gt;
         login: demo
         &lt;br /&gt;
         hasło: demo&lt;/p&gt;</value>

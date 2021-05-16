@@ -202,6 +202,7 @@ hr {
     background-image: url('../images/notebook.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: 700px;
 }
 
@@ -382,6 +383,7 @@ footer {
     background-image: url('../images/projects.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: 600px;
 }
 
@@ -434,6 +436,7 @@ footer {
     background-image: url('../images/erp.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment:fixed;
     height: 600px;
 }
 
@@ -467,6 +470,7 @@ footer {
     background-image: url('../images/qr.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: 600px;
 }
 
@@ -552,6 +556,7 @@ footer {
         background-image: url('../images/projects-mobile.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+        background-attachment: fixed;
         height: 400px;
     }
 
@@ -571,6 +576,7 @@ footer {
         background-image: url('../images/erp-mobile.png');
         background-repeat: no-repeat;
         background-size: cover;
+        background-attachment: fixed;
         height: 400px;
     }
 
@@ -591,6 +597,7 @@ footer {
         background-image: url('../images/qr-mobile.png');
         background-repeat: no-repeat;
         background-size: cover;
+        background-attachment: fixed;
         height: 400px;
     }
 

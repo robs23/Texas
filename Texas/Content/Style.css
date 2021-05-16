@@ -114,6 +114,7 @@
     background-image: url('../img/notebook.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: 700px;
 }
 

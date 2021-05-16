@@ -121,7 +121,7 @@
     <value>DEMO</value>
   </data>
   <data name="Demo_text" xml:space="preserve">
-    <value>You can try the app &lt;a href="https://systo.rr-soft.pl"&gt;here&lt;/a&gt;, either by creating an account for yourself or by loging with demo account credentials: &lt;br /&gt;
+    <value>You can try the app &lt;a href="https://systo.roszak.dev"&gt;here&lt;/a&gt;, either by creating an account for yourself or by loging with demo account credentials: &lt;br /&gt;
         login: demo
         &lt;br /&gt;
         password: demo&lt;/p&gt;</value>
