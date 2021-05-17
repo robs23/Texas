@@ -462,6 +462,35 @@ footer {
     display: block;
     margin: 0 auto;
 }
+
+span.play-gif-container {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    cursor: pointer;
+    display: table;
+    height: 150px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 150px;
+    opacity: 0;
+}
+
+    span.play-gif-container span {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+div.feature-gif {
+    display: inline-block;
+    position: relative;
+    background-color: red;
+}
+
+    div.feature-gif:hover span.play-gif-container {
+        opacity: 1;
+    }
 /* --------------END of Systo.cshtml----------------*/
 
 /* --------------QrScanner.cshtml----------------*/
@@ -589,10 +618,10 @@ footer {
         width: 100%;
         max-width: 543px;
     }
+
+    
     /* --------------END of Systo.cshtml----------------*/
-
     /* --------------QrScanner.cshtml----------------*/
-
     #qrScanner-overview #row-1 {
         background-image: url('../images/qr-mobile.png');
         background-repeat: no-repeat;
