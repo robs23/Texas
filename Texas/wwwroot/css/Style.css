@@ -464,15 +464,15 @@ footer {
 }
 
 span.play-gif-container {
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.3);
     color: white;
     cursor: pointer;
     display: table;
-    height: 150px;
+    height: 100%;
     left: 0;
     position: absolute;
     top: 0;
-    width: 150px;
+    width: 100%;
     opacity: 0;
 }
 
