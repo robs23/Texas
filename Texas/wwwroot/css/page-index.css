@@ -1,0 +1,237 @@
+﻿#index #row-1 {
+    background-image: url('../images/notebook.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 700px;
+}
+
+#welcome {
+    margin-left: 180px;
+    padding-top: 130px;
+    color: white;
+    width: 360px;
+}
+
+#index #row-2, #row-3 {
+    height: 550px;
+}
+
+#index #row-4 {
+    height: 300px;
+}
+
+#bio-img {
+    margin-left: 20%;
+    float: left;
+}
+
+#bio-text {
+    width: 550px;
+    display: inline-block;
+}
+
+#row-2, #row-3, #row-4 h1 {
+    text-align: center;
+}
+
+#index #row-2 {
+    border: 1px solid white;
+    background-color: white;
+}
+
+#index #row-3 {
+    background-color: #6e6964;
+}
+
+#row-3 h1, #row-4 h1 {
+    color: white;
+    padding-top: 30px;
+}
+
+#projects-container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#project-text {
+    visibility: hidden;
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    width: 400px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.project-box {
+    display: inline-block;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    /*transition: top 0.2s ease-in-out;*/
+}
+
+.project-box:hover #project-text {
+    visibility: visible;
+    display: block;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 50px;
+    opacity: 1;
+    margin: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+}
+
+#index #row-4 {
+    margin-top: -20px;
+    padding-top: 0px;
+    background-color: #000;
+}
+
+#contact-inputs {
+    width: 800px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#contact-name-mail {
+    width: 50%;
+    float: left;
+}
+
+#contact-name {
+    width: 95%;
+    margin-bottom: 10px;
+}
+
+#contact-mail {
+    width: 95%;
+}
+
+#contact-message {
+    height: auto;
+    margin-right: 0;
+    margin-left: 4%;
+    width: 45%;
+    resize: vertical;
+    clear: both;
+}
+
+#contact-submit {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#learn-more {
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 1100px){
+    #bio-img {
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    #bio-img {
+        margin: 0;
+        width: 40%;
+    }
+
+    #bio-img img {
+        width: 200px;
+    }
+
+    #bio-text {
+        width: 60%;
+    }
+
+    #bio-text p {
+        padding-right: 30px;
+    }
+
+    #contact-inputs {
+        width: 100%;
+    }
+
+    #contact-name {
+        width: 100%;
+    }
+
+    #contact-mail {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #contact-name-mail {
+        float: none;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #contact-message {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #welcome {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #projects-container {
+        width: 100%;
+    }
+
+
+    #bio-text {
+        width: 90%;
+        display: inline-block;
+    }
+
+    #bio-text p {
+        padding-right: 0;
+    }
+
+    #bio-img {
+        width: 100%;
+    }
+
+    #bio-img img {
+        margin: 0 auto;
+    }
+
+    #index #row-2 {
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .project-box, #project-text {
+        width: 90%;
+    }
+
+        .project-box img {
+            width: 100%;
+        }
+
+        .project-box:hover #project-text {
+            background-color: rgba(0,0,0,0.8);
+            width: 100%;
+            height: 100%;
+        }
+}

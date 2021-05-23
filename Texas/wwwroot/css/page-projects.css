@@ -1,0 +1,70 @@
+﻿/* --------------Projects.cshtml----------------*/
+#projects #row-1 {
+    background-image: url('../images/projects.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+}
+
+#projects #row-2 {
+    background-color: white;
+}
+
+#projects #feed {
+    margin: 0 auto;
+    width: 900px;
+    text-align: justify;
+}
+
+#feed article {
+    margin-bottom: 100px;
+}
+
+#projects h3, h1 {
+    color: #b2b2b2;
+}
+
+#projects p {
+    color: rgba(35, 37, 40, 0.7);
+}
+
+.project-img {
+    animation-duration: 5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+@media only screen and (max-width: 950px){
+    #projects #row-1 {
+        background-image: url('../images/projects-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 400px;
+    }
+
+    #projects #feed {
+        width: 100%;
+        padding: 20px 20px;
+    }
+
+    img.project-img {
+        width: 100%;
+    }
+}
+
+/* --------------END of Projects.cshtml----------------*/

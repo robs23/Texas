@@ -2,6 +2,9 @@
 @using Microsoft.AspNetCore.Mvc.Localization
 @inject IViewLocalizer Localizer
 @model IndexModel
+@section head{ 
+    <link href="~/css/page-index.css" rel="stylesheet" />
+}
 
 @{
     if (TempData["MessageSent"] != null)

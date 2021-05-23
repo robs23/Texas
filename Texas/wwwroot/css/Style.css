@@ -196,45 +196,13 @@ hr {
     color: #999999;
 }
 
-        /* --------------Index.cshtml styling----------------*/
-
-#index #row-1 {
-    background-image: url('../images/notebook.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 700px;
-}
-
-#welcome {
-    margin-left: 180px;
-    padding-top: 130px;
-    color: white;
-    width: 360px;
-}
 
 h1 {
     font-size: 40px;
     font-weight: 700;
 }
 
-#index #row-2, #row-3{
-    height: 550px;
-}
 
-#index #row-4{
-    height: 300px;
-}
-
-#bio-img {
-    margin-left: 20%;
-    float: left;
-}
-
-#bio-text {
-    width: 550px;
-    display: inline-block;
-}
 
 body {
     margin: 0 !important;
@@ -247,64 +215,6 @@ p {
     font-size: 18px;
 }
 
-#row-2, #row-3, #row-4 h1 {
-    text-align: center;
-}
-
-#index #row-2 {
-    border: 1px solid white;
-    background-color: white;
-}
-
-#index #row-3 {
-    background-color: #6e6964;
-}
-
-    #row-3 h1, #row-4 h1 {
-        color: white;
-        padding-top: 30px;
-    }
-
-#projects-container {
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-#project-text {
-    visibility: hidden;
-    position: absolute;
-    text-align: center;
-    top: 100px;
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
-    width: 400px;
-    height: 150px;
-    overflow: hidden;
-}
-
-.project-box {
-    display: inline-block;
-    width: 400px;
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
-    /*transition: top 0.2s ease-in-out;*/
-}
-
-.project-box:hover #project-text {
-    visibility: visible;
-    display: block;
-    color: white;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 50px;
-    opacity: 1;
-    margin: 0;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0,0.8);
-}
 
 .btn-center {
     width: 50%;
@@ -312,52 +222,6 @@ p {
     text-align: center;
 }
 
-#index #row-4 {
-    margin-top: -20px;
-    padding-top: 0px;
-    background-color: #000;
-}
-
-#contact-inputs {
-    width: 800px;
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-#contact-name-mail {
-    width: 50%;
-    float: left;
-}
-
-#contact-name {
-    width: 95%;
-    margin-bottom: 10px;
-}
-
-#contact-mail {
-    width: 95%;
-}
-
-#contact-message {
-    height: auto;
-    margin-right: 0;
-    margin-left: 4%;
-    width: 45%;
-    resize: vertical;
-    clear: both;
-}
-
-#contact-submit {
-    display: block;
-    margin: 0 auto;
-    margin-top: 30px;
-}
-
-#learn-more{
-    margin-top: 30px;
-}
-
-/* --------------End of Index.cshtml styling----------------*/
 
 /* --------------Footer styling----------------*/
 
@@ -378,137 +242,12 @@ footer {
 
 /* --------------End of Footer styling----------------*/
 
-/* --------------Projects.cshtml----------------*/
-#projects #row-1 {
-    background-image: url('../images/projects.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 600px;
-}
 
-#projects #row-2{
-    background-color: white;
-}
 
-#projects #feed {
-    margin: 0 auto;
-    width: 900px;
-    text-align: justify;
-}
 
-#feed article{
-    margin-bottom:100px;
-}
 
-#projects h3, h1 {
-    color: #b2b2b2;
-}
 
-#projects p{
-    color: rgba(35, 37, 40, 0.7);
-}
-
-.project-img {
-    animation-duration: 5s;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-}
-
-/* --------------END of Projects.cshtml----------------*/
-
-/* --------------Systo.cshtml----------------*/
-
-#systo-overview #row-1 {
-    background-image: url('../images/erp.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment:fixed;
-    height: 600px;
-}
-
-.container {
-    margin: 0 auto;
-    width: 900px;
-    text-align: justify;
-}
-#app-overview p {
-    color: rgba(35, 37, 40, 0.7);
-}
-
-#app-overview h3, h1 {
-    color: #b2b2b2;
-}
-
-.feature-container{
-    margin-top: 50px;
-    margin-bottom: 100px;
-}
-
-.feature-img {
-    display: block;
-    margin: 0 auto;
-}
-
-span.play-gif-container {
-    background: rgba(0,0,0,0.3);
-    color: white;
-    cursor: pointer;
-    display: table;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    opacity: 0;
-}
-
-    span.play-gif-container span {
-        display: table-cell;
-        text-align: center;
-        vertical-align: middle;
-    }
-
-div.feature-gif {
-    display: inline-block;
-    position: relative;
-    background-color: red;
-}
-
-    div.feature-gif:hover span.play-gif-container {
-        opacity: 1;
-    }
-/* --------------END of Systo.cshtml----------------*/
-
-/* --------------QrScanner.cshtml----------------*/
-
-#qrScanner-overview #row-1 {
-    background-image: url('../images/qr.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 600px;
-}
-
-/* --------------END of Systo.cshtml----------------*/
 @media only screen and (max-width: 1100px) {
-    #bio-img {
-        margin-left: 5%;
-    }
-
     #nav-lang ul li {
         width: 70px;
     }
@@ -528,23 +267,6 @@ div.feature-gif {
     }
 
 
-    #bio-img {
-        margin: 0;
-        width: 40%;
-    }
-
-        #bio-img img {
-            width: 200px;
-        }
-
-    #bio-text {
-        width: 60%;
-    }
-
-        #bio-text p {
-            padding-right: 30px;
-        }
-
     p {
         font-size: 16px;
     }
@@ -552,85 +274,6 @@ div.feature-gif {
     h1 {
         font-size: 36px;
     }
-
-    #contact-inputs {
-        width: 100%;
-    }
-
-    #contact-name {
-        width: 100%;
-    }
-
-    #contact-mail {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    #contact-name-mail {
-        float: none;
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    #contact-message {
-        margin-left: 5%;
-        margin-right: 5%;
-        width: 90%;
-    }
-
-    /* --------------Projects.cshtml----------------*/
-
-    #projects #row-1 {
-        background-image: url('../images/projects-mobile.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        height: 400px;
-    }
-
-    #projects #feed {
-        width: 100%;
-        padding: 20px 20px;
-    }
-
-    img.project-img{
-        width: 100%;
-    }
-
-    /* --------------END of Projects.cshtml----------------*/
-    /* --------------Systo.cshtml----------------*/
-
-    #systo-overview #row-1 {
-        background-image: url('../images/erp-mobile.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        height: 400px;
-    }
-
-    .container {
-        width: 100%;
-        padding: 20px 20px;
-    }
-
-    img.feature-img {
-        width: 100%;
-        max-width: 543px;
-    }
-
-    
-    /* --------------END of Systo.cshtml----------------*/
-    /* --------------QrScanner.cshtml----------------*/
-    #qrScanner-overview #row-1 {
-        background-image: url('../images/qr-mobile.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        height: 400px;
-    }
-
-    /* --------------END of QrScanner.cshtml----------------*/
 }
 
 @media only screen and (max-width: 640px){
@@ -678,9 +321,6 @@ div.feature-gif {
             transform: rotate(-90deg) translateX(-10px);
         }
 
-    /*#nav-main ul li:hover {
-        background-color: #43403d;
-    }*/
 
     #nav-main ul li {
         width: 100%;
@@ -695,53 +335,6 @@ div.feature-gif {
     h1 {
         font-size: 32px;
     }
-
-    #welcome {
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    #projects-container {
-        width: 100%;
-    }
-
-
-    #bio-text {
-        width: 90%;
-        display: inline-block;
-    }
-
-        #bio-text p {
-            padding-right: 0;
-        }
-
-    #bio-img {
-        width: 100%;
-    }
-
-        #bio-img img {
-            margin: 0 auto;
-        }
-
-    #index #row-2 {
-        height: 100%;
-    }
-
 }
 
-@media only screen and (max-width: 400px) {
-    .project-box, #project-text {
-        width: 90%;
-    }
 
-    .project-box img{
-        width:100%;
-    }
-
-    .project-box:hover #project-text {
-        background-color: rgba(0,0,0,0.8);
-        width:100%;
-        height:100%;
-    }
-}

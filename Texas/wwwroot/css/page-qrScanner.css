@@ -1,0 +1,21 @@
+﻿/* --------------QrScanner.cshtml----------------*/
+
+#qrScanner-overview #row-1 {
+    background-image: url('../images/qr.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+}
+
+/* --------------END of Systo.cshtml----------------*/
+
+@media only screen and (max-width: 950px){
+    #qrScanner-overview #row-1 {
+        background-image: url('../images/qr-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 400px;
+    }
+}

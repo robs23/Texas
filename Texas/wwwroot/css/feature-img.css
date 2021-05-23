@@ -1,0 +1,38 @@
+﻿.feature-container {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.feature-img {
+    display: block;
+    margin: 0 auto;
+}
+
+span.play-gif-container {
+    background: rgba(0,0,0,0.3);
+    color: white;
+    cursor: pointer;
+    display: table;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+}
+
+    span.play-gif-container span {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+div.feature-gif {
+    display: inline-block;
+    position: relative;
+    background-color: red;
+}
+
+    div.feature-gif:hover span.play-gif-container {
+        opacity: 1;
+    }

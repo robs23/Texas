@@ -1,0 +1,46 @@
+﻿/* --------------Systo.cshtml----------------*/
+
+#systo-overview #row-1 {
+    background-image: url('../images/erp.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 900px;
+    text-align: justify;
+}
+
+#app-overview p {
+    color: rgba(35, 37, 40, 0.7);
+}
+
+#app-overview h3, h1 {
+    color: #b2b2b2;
+}
+
+@media only screen and (max-width: 950px){
+    #systo-overview #row-1 {
+        background-image: url('../images/erp-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 400px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 20px 20px;
+    }
+
+    img.feature-img {
+        width: 100%;
+        max-width: 543px;
+    }
+}
+
+
+/* --------------END of Systo.cshtml----------------*/
