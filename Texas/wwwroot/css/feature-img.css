@@ -9,7 +9,7 @@
 }
 
 span.play-gif-container {
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.8);
     color: white;
     cursor: pointer;
     display: table;
@@ -36,3 +36,12 @@ div.feature-gif {
     div.feature-gif:hover span.play-gif-container {
         opacity: 1;
     }
+
+i.feature-btn {
+    font-size: 5rem;
+    color: white;
+}
+
+i.feature-btn:hover {
+    color: rgb(116, 252, 138);
+}

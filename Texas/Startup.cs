@@ -16,6 +16,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Texas.Static;
 using Texas.TagHelpers;
+using Westwind.AspNetCore.LiveReload;
 
 namespace Texas
 {
@@ -44,7 +45,8 @@ namespace Texas
             services.AddMvc(options => options.EnableEndpointRouting = false)
               .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
               .AddDataAnnotationsLocalization()
-              .AddSessionStateTempDataProvider();
+              .AddSessionStateTempDataProvider().AddRazorRuntimeCompilation();
+            services.AddLiveReload();
             //services.ConfigureMvcRazorPages(CompatibilityVersion.Version_3_0, "/Index", "Home");
             // Register the Google Analytics configuration
             services.Configure<GoogleAnalyticsOptions>(options => Configuration.GetSection("GoogleAnalytics").Bind(options));
@@ -71,7 +73,7 @@ namespace Texas
                 var options = new RewriteOptions().AddRedirectToHttps();
                 app.UseRewriter(options);
             }
-            
+            app.UseLiveReload();
 
             var supportedCultures = new[]
             {
@@ -94,6 +96,7 @@ namespace Texas
             app.UseStaticFiles();
             app.UseRouting();
             app.UseMvc();
+            
             //app.UseEndpoints(endpoints => endpoints.MapRazorPages());
 
         }
