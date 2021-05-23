@@ -19,6 +19,7 @@ span.play-gif-container {
     top: 0;
     width: 100%;
     opacity: 0;
+    transition: all 0.2s ease-in-out;
 }
 
     span.play-gif-container span {
@@ -40,6 +41,7 @@ div.feature-gif {
 i.feature-btn {
     font-size: 5rem;
     color: white;
+    transition: all 0.2s ease-in-out;
 }
 
 i.feature-btn:hover {
