@@ -34,11 +34,32 @@ window.addEventListener('scroll', function () {
     for (var i = 0; i < images.length; i++) {
         var isElementInView = Utils.isElementInView($('#' + images[i].id), true);
         if (isElementInView && images[i].isDownloaded) {
-            images[i].isDisplayed = true;
-            images[i].image.src = "/images/Async/" + images[i].id + ".gif";
+            changeImage2Gif(images[i]);
+            //images[i].isDisplayed = true;
+            //images[i].image.src = "/images/Async/" + images[i].id + ".gif";
         }
     }
 
 });
+
+function changeImage2Gif(img) {
+    img.isDisplayed = true;
+    img.image.src = "/images/Async/" + img.id + ".gif";
+}
+
+function changeImage2GifWithButton(sectionId) {
+    //sectionId = e.g. systo_logistics
+    var img = images.filter(function (image) {
+        return image.id == sectionId;
+    });
+    if (img.length > 0) {
+        changeImage2Gif(img[0]);
+    }
+    
+}
+
+function changeGif2Image(gif) {
+
+}
 
 var Utils = new Utils();
