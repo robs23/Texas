@@ -2,6 +2,7 @@
 class FeatureImg{
     id = "";
     isDisplayed = false;
+    isStopped = false;
     isDownloaded = false;
     image = null;
     initialImage = null;
@@ -23,5 +24,17 @@ class FeatureImg{
         var downloadingImage = new Image();
         downloadingImage.addEventListener('load', this.imageLoaded);
         downloadingImage.src = "/images/Async/"+ this.id +".gif";
+    }
+
+    changeImage2Gif() {
+        this.isDisplayed = true;
+        this.isStopped = false;
+        this.image.src = "/images/Async/" + this.id + ".gif";
+    }
+
+    changeGif2Image() {
+        this.isDisplayed = false;
+        this.isStopped = true;
+        this.image.src = "/images/" + this.id + ".png";
     }
 }

@@ -33,19 +33,14 @@ Utils.prototype = {
 window.addEventListener('scroll', function () {
     for (var i = 0; i < images.length; i++) {
         var isElementInView = Utils.isElementInView($('#' + images[i].id), true);
-        if (isElementInView && images[i].isDownloaded) {
-            changeImage2Gif(images[i]);
-            //images[i].isDisplayed = true;
-            //images[i].image.src = "/images/Async/" + images[i].id + ".gif";
+        if (isElementInView && images[i].isDownloaded && !images[i].isStopped) {
+            images[i].changeImage2Gif();
+            setButtonActive(images[i].id, 'player');
         }
     }
 
 });
 
-function changeImage2Gif(img) {
-    img.isDisplayed = true;
-    img.image.src = "/images/Async/" + img.id + ".gif";
-}
 
 function changeImage2GifWithButton(sectionId) {
     //sectionId = e.g. systo_logistics
@@ -53,13 +48,35 @@ function changeImage2GifWithButton(sectionId) {
         return image.id == sectionId;
     });
     if (img.length > 0) {
-        changeImage2Gif(img[0]);
+        img[0].changeImage2Gif();
+        setButtonActive(img[0].id, 'player');
     }
     
 }
 
-function changeGif2Image(gif) {
+function changeGif2ImageWithButton(sectionId) {
+    //sectionId = e.g. systo_logistics
+    var img = images.filter(function (image) {
+        return image.id == sectionId;
+    });
+    if (img.length > 0) {
+        img[0].changeGif2Image();
+        setButtonActive(img[0].id, 'stopper');
+    }
 
 }
+
+function setButtonActive(sectionId, className) {
+    var environs = document.getElementById(sectionId).parentElement.getElementsByTagName("*");
+    for (var i = 0; i < environs.length; i++) {
+        if (environs[i].classList.contains(className)) {
+            environs[i].classList.add('isActive');
+        }
+        if (environs[i].classList.contains('isActive') && !environs[i].classList.contains(className)) {
+            environs[i].classList.remove('isActive');
+        }
+    }
+}
+
 
 var Utils = new Utils();

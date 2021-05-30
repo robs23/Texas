@@ -47,3 +47,8 @@ i.feature-btn {
 i.feature-btn:hover {
     color: rgb(116, 252, 138);
 }
+
+i.isActive{
+    color: crimson !important;
+    cursor: not-allowed;
+}
