@@ -1,11 +1,18 @@
 ﻿.feature-container {
     margin-top: 50px;
     margin-bottom: 100px;
+    position: relative;
+    
+}
+
+.feature-img-container {
+    text-align: center;
 }
 
 .feature-img {
     display: block;
     margin: 0 auto;
+    max-width: 800px;
 }
 
 span.play-gif-container {
@@ -14,6 +21,7 @@ span.play-gif-container {
     cursor: pointer;
     display: table;
     height: 100%;
+    margin: 0 auto;
     left: 0;
     position: absolute;
     top: 0;
@@ -29,9 +37,8 @@ span.play-gif-container {
     }
 
 div.feature-gif {
-    display: inline-block;
+    display: inline-block;/*inline-block;*/
     position: relative;
-    background-color: red;
 }
 
     div.feature-gif:hover span.play-gif-container {
