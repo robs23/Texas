@@ -15,8 +15,26 @@
     max-width: 800px;
 }
 
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(40, 96, 144);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    font-size: medium;
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip-container:hover .tooltiptext{
+    visibility: visible;
+}
+
 span.play-gif-container {
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.4);
     color: white;
     cursor: pointer;
     display: table;
@@ -45,9 +63,13 @@ div.feature-gif {
         opacity: 1;
     }
 
+    div.feature-gif:hover img.feature-img{
+        filter: blur(4px);
+    }
+
 i.feature-btn {
     font-size: 5rem;
-    color: white;
+    color: rgb(40, 96, 144);
     transition: all 0.2s ease-in-out;
 }
 
