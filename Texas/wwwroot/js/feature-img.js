@@ -2,7 +2,7 @@
 class FeatureImg{
     id = "";
     isDisplayed = false;
-    isStopped = false;
+    isStopped = true;
     isDownloaded = false;
     image = null;
     initialImage = null;
