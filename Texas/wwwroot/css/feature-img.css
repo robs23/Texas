@@ -90,19 +90,22 @@ i.feature-btn {
     font-size: 5rem;
     color: rgb(40, 96, 144);
     transition: all 0.2s ease-in-out;
-}
+}   
 
 i.feature-btn:hover {
-    color: rgb(116, 252, 138);
+    color: rgb(75, 140, 196);
+    transition: all 0s ease-in-out;
 }
 
-i.isActive{
-    color: crimson !important;
-    cursor: not-allowed;
+i.isActive {
     visibility: hidden;
 }
 
-.player{
+i.isActive span.tooltiptext{
+    visibility: hidden !important;
+}
+
+.player {
     z-index: 1;
 }
 
