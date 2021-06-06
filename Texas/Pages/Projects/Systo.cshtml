@@ -21,7 +21,7 @@
                 <p>@Localizer["Modular-text"]</p>
 
                 <img src="~/images/Systo_modules.png" id="systo_modules" class="feature-img" />
-                
+
             </div>
             <div class="feature-container">
                 <h3>@Localizer["Multitenant"]</h3>
@@ -41,24 +41,16 @@
                         </span>
                     </div>
                 </div>
-                
+
             </div>
             <div class="feature-container">
                 <h3>@Localizer["HR"]</h3>
                 <p>@Localizer["HR-text"]</p>
                 <div class="feature-img-container">
-                    <div class="feature-gif">
-                        <img src="~/images/systo_hr.png" id="systo_hr" class="feature-img" />
-                        <span class="play-gif-container">
-                            <span>
-                                <i class="fa fa-play-circle feature-btn player" onclick="changeImage2GifWithButton('systo_hr')"></i>
-                                <i class="fa fa-stop-circle feature-btn stopper" onclick="changeGif2ImageWithButton('systo_hr')"></i>
-                            </span>
-                        </span>
-                    </div>
+                    <feature-gif id="systo_hr" play-tooltip="@Localizer["Feature-gif-play"].Value" stop-tooltip="@Localizer["Feature-gif-stop"].Value"></feature-gif>
                 </div>
             </div>
-                
+
             <div class="feature-container">
                 <h3>@Localizer["CRM"]</h3>
                 <p>@Localizer["CRM-text"]</p>
