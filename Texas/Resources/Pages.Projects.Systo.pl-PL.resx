@@ -123,6 +123,12 @@
   <data name="CRM-text" xml:space="preserve">
     <value>Nie ma biznesu oddzielonego od innych firm i aby być konkurencyjnym, trzeba nauczyć się profesjonalnie zarządzać swoimi relacjami. Moduł CRM aplikacji jest świetnym miejscem do rozpoczęcia. Wszyscy użytkownicy przestrzeni roboczej mogą prowadzić rejestr firm, z którymi pracują, bezpiecznie przechowując ich adres oraz ich dane kontaktowe i finansowe.</value>
   </data>
+  <data name="Feature-gif-play" xml:space="preserve">
+    <value>Odtwarzaj</value>
+  </data>
+  <data name="Feature-gif-stop" xml:space="preserve">
+    <value>Zatrzymaj</value>
+  </data>
   <data name="HR" xml:space="preserve">
     <value>Dane pracowników pod kontrolą</value>
   </data>

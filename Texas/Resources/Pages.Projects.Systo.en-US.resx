@@ -123,6 +123,12 @@
   <data name="CRM-text" xml:space="preserve">
     <value>There's no business separated from other companies and to be competitive, one needs to learn how to manage its relationships professionally. CRM module of the application is great place to start. All users of the work space can keep track of the companies they work with, securely stroring their address,contact and financial data. </value>
   </data>
+  <data name="Feature-gif-play" xml:space="preserve">
+    <value>Play</value>
+  </data>
+  <data name="Feature-gif-stop" xml:space="preserve">
+    <value>Stop</value>
+  </data>
   <data name="HR" xml:space="preserve">
     <value>Employees' data under control</value>
   </data>
