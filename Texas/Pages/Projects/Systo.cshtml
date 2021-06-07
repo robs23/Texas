@@ -27,19 +27,7 @@
                 <h3>@Localizer["Multitenant"]</h3>
                 <p>@Localizer["Multitenant-text"]</p>
                 <div class="feature-img-container">
-                    <div class="feature-gif">
-                        <img src="~/images/systo_multitenancy.png" id="systo_multitenancy" class="feature-img" />
-                        <span class="play-gif-container">
-                            <span>
-                                <i class="fa fa-play-circle feature-btn player tooltip-container" onclick="changeImage2GifWithButton('systo_multitenancy')">
-                                    <span class="tooltiptext">@Localizer["Feature-gif-play"]</span>
-                                </i>
-                                <i class="fa fa-stop-circle feature-btn stopper tooltip-container isActive" onclick="changeGif2ImageWithButton('systo_multitenancy')">
-                                    <span class="tooltiptext">@Localizer["Feature-gif-stop"]</span>
-                                </i>
-                            </span>
-                        </span>
-                    </div>
+                    <feature-gif id="systo_multitenancy" play-tooltip="@Localizer["Feature-gif-play"].Value" stop-tooltip="@Localizer["Feature-gif-stop"].Value"></feature-gif>
                 </div>
 
             </div>
@@ -55,45 +43,21 @@
                 <h3>@Localizer["CRM"]</h3>
                 <p>@Localizer["CRM-text"]</p>
                 <div class="feature-img-container">
-                    <div class="feature-gif">
-                        <img src="~/images/systo_crm.png" id="systo_crm" class="feature-img" />
-                        <span class="play-gif-container">
-                            <span>
-                                <i class="fa fa-play-circle feature-btn player" onclick="changeImage2GifWithButton('systo_crm')"></i>
-                                <i class="fa fa-stop-circle feature-btn stopper" onclick="changeGif2ImageWithButton('systo_crm')"></i>
-                            </span>
-                        </span>
-                    </div>
+                    <feature-gif id="systo_crm" play-tooltip="@Localizer["Feature-gif-play"].Value" stop-tooltip="@Localizer["Feature-gif-stop"].Value"></feature-gif>
                 </div>
             </div>
             <div class="feature-container">
                 <h3>@Localizer["Logistics"]</h3>
                 <p>@Localizer["Logistics-text"]</p>\
                 <div class="feature-img-container">
-                    <div class="feature-gif">
-                        <img src="~/images/systo_logistics.png" id="systo_logistics" class="feature-img" />
-                        <span class="play-gif-container">
-                            <span>
-                                <i class="fa fa-play-circle feature-btn player" onclick="changeImage2GifWithButton('systo_logistics')"></i>
-                                <i class="fa fa-stop-circle feature-btn stopper" onclick="changeGif2ImageWithButton('systo_logistics')"></i>
-                            </span>
-                        </span>
-                    </div>
+                    <feature-gif id="systo_logistics" play-tooltip="@Localizer["Feature-gif-play"].Value" stop-tooltip="@Localizer["Feature-gif-stop"].Value"></feature-gif>
                 </div>
             </div>
             <div class="feature-container">
                 <h3>@Localizer["Reporting"]</h3>
                 <p>@Localizer["Reporting-text"]</p>
                 <div class="feature-img-container">
-                    <div class="feature-gif">
-                        <img src="~/images/systo_printable.png" id="systo_printable" class="feature-img" />
-                        <span class="play-gif-container">
-                            <span>
-                                <i class="fa fa-play-circle feature-btn player" onclick="changeImage2GifWithButton('systo_printable')"></i>
-                                <i class="fa fa-stop-circle feature-btn stopper" onclick="changeGif2ImageWithButton('systo_printable')"></i>
-                            </span>
-                        </span>
-                    </div>
+                    <feature-gif id="systo_printable" play-tooltip="@Localizer["Feature-gif-play"].Value" stop-tooltip="@Localizer["Feature-gif-stop"].Value"></feature-gif>
                 </div>
             </div>
         </div>
