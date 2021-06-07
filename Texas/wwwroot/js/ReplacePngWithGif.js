@@ -33,7 +33,7 @@ Utils.prototype = {
 window.addEventListener('scroll', function () {
     for (var i = 0; i < images.length; i++) {
         var isElementInView = Utils.isElementInView($('#' + images[i].id), true);
-        if (isElementInView && images[i].isDownloaded && !images[i].isStopped) {
+        if (isElementInView && images[i].isDownloaded && images[i].isStopped) {
             images[i].changeImage2Gif();
             setButtonActive(images[i].id, 'player');
         }
