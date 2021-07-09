@@ -86,6 +86,8 @@ div.feature-gif {
     }
 
 i.feature-btn {
+    margin-left: -10px;
+    margin-top: -10px;
     position: absolute;
     font-size: 5rem;
     color: rgb(40, 96, 144);

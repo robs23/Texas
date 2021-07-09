@@ -4,6 +4,7 @@
 @model IndexModel
 @section head{ 
     <link href="~/css/page-index.css" rel="stylesheet" />
+    <link href="~/css/animation.css" rel="stylesheet"  />
 }
 
 @{
@@ -31,7 +32,7 @@
     </section>
     <section id="row-2">
         <h1>@Localizer["Bio"]</h1>
-        <div id="bio-img">
+        <div id="bio-img" class="fadeIn slide-from-left">
             <img src="~/images/bio-img-2020.png" />
         </div>
         <div id="bio-text">
