@@ -21,10 +21,13 @@
     height: 300px;
 }
 
+
 #bio-img {
     margin-left: 20%;
     float: left;
-    animation-duration: 3s;
+    animation: fadeIn 0.5s ease-in forwards, slide 0.25s ease-in forwards;
+/*    transform: translateX(300px);
+    transition: transform 10s;*/
 }
 
 #bio-text {
@@ -32,9 +35,6 @@
     display: inline-block;
 }
 
-.slide-from-left{
-    animation: slide 10s forwards;
-}
 
 #row-2, #row-3, #row-4 h1 {
     text-align: center;

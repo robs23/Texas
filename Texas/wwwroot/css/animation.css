@@ -14,13 +14,21 @@
 }
 
 @-webkit-keyframes slide {
-    100% {
-        left: 0;
+    0% {
+        transform: translateX(-100%);
     }
+    100% {
+        transform: translateX(0);
+    }
+    
 }
 
 @keyframes slide {
+    0% {
+        transform: translateX(-100%);
+    }
+
     100% {
-        left: 0;
+        transform: translateX(0);
     }
 }
