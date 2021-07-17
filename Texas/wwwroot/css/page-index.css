@@ -11,6 +11,7 @@
     padding-top: 130px;
     color: white;
     width: 360px;
+    animation: fade-in 0.5s ease-in forwards, slide-from-left 0.5s ease-in backwards;
 }
 
 #index #row-2, #row-3 {
@@ -25,14 +26,13 @@
 #bio-img {
     margin-left: 20%;
     float: left;
-    animation: fadeIn 0.5s ease-in forwards, slide 0.25s ease-in forwards;
-/*    transform: translateX(300px);
-    transition: transform 10s;*/
+    animation: fade-in 0.5s ease-in forwards, slide-from-left 0.4s ease-in forwards;
 }
 
 #bio-text {
     width: 550px;
     display: inline-block;
+    animation: fade-in 0.5s ease-in forwards, slide-from-right 0.4s ease-in 0.3s backwards;
 }
 
 

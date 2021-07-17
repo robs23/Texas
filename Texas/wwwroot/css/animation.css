@@ -1,4 +1,4 @@
-﻿@keyframes fadeIn {
+﻿@keyframes fade-in {
     0% {
         opacity: 0;
     }
@@ -8,12 +8,12 @@
     }
 }
 
-.fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
+.fade-in {
+    -webkit-animation-name: fade-in;
+    animation-name: fade-in;
 }
 
-@-webkit-keyframes slide {
+@-webkit-keyframes slide-from-left {
     0% {
         transform: translateX(-100%);
     }
@@ -23,9 +23,29 @@
     
 }
 
-@keyframes slide {
+@keyframes slide-from-right {
     0% {
         transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes slide-from-right {
+    0% {
+        transform: translateX(200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-from-right {
+    0% {
+        transform: translateX(200%);
     }
 
     100% {
