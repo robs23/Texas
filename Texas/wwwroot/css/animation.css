@@ -8,9 +8,14 @@
     }
 }
 
+.fadable{
+    visibility: hidden;
+}
+
 .fade-in {
-    animation: fade-in 0.5s ease-in backwards;
-    -webkit-animation: fade-in 0.5s ease-in backwards;
+    visibility: visible;
+    animation: fade-in 0.5s ease-in forwards;
+    -webkit-animation: fade-in 0.5s ease-in forwards;
 }
 
 @-webkit-keyframes slide-from-left {
@@ -53,12 +58,22 @@
     }
 }
 
+.slidable-from-left{
+    visibility: hidden;
+}
+
+.slidable-from-right{
+    visibility: hidden;
+}
+
 .slide-from-left {
+    visibility: visible;
     animation: slide-from-left 0.4s ease-in forwards;
     -webkit-animation: slide-from-left 0.4s ease-in forwards;
 }
 
 .slide-from-right{
+    visibility: visible;
     animation: slide-from-right 0.4s ease-in forwards;
     -webkit-animation: slide-from-right 0.4s ease-in forwards;
 }
