@@ -26,13 +26,11 @@
 #bio-img {
     margin-left: 20%;
     float: left;
-    animation: fade-in 0.5s ease-in forwards, slide-from-left 0.4s ease-in forwards;
 }
 
 #bio-text {
     width: 550px;
     display: inline-block;
-    animation: fade-in 0.5s ease-in forwards, slide-from-right 0.4s ease-in 0.3s backwards;
 }
 
 

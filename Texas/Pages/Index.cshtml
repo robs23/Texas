@@ -23,7 +23,7 @@
 
 <article id="index">
     <section id="row-1">
-        <div id="welcome">
+        <div id="welcome" class="fadable">
             <h1>@Localizer["Welcome"]!</h1>
             <p>
                 @Localizer["Welcome text"]
@@ -32,10 +32,10 @@
     </section>
     <section id="row-2" class="bio">
         <h1>@Localizer["Bio"]</h1>
-        <div id="bio-img">
+        <div id="bio-img" class="fadable">
             <img src="~/images/bio-img-2020.png" />
         </div>
-        <div id="bio-text">
+        <div id="bio-text" class="fadable">
             <p>
                 @Localizer["Bio text"]
             </p>
@@ -79,6 +79,8 @@
 </article>
 
 @section scripts{
+    <script src="~/js/utils.js" asp-append-version="true"></script>
+    <script src="~/js/page-index.js" asp-append-version="true"></script>
     @await Html.PartialAsync("_ValidationScriptsPartial")
     <script type="text/javascript">
         function closeDialog() {

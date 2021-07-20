@@ -9,8 +9,8 @@
 }
 
 .fade-in {
-    -webkit-animation-name: fade-in;
-    animation-name: fade-in;
+    animation: fade-in 0.5s ease-in backwards;
+    -webkit-animation: fade-in 0.5s ease-in backwards;
 }
 
 @-webkit-keyframes slide-from-left {
@@ -51,4 +51,14 @@
     100% {
         transform: translateX(0);
     }
+}
+
+.slide-from-left {
+    animation: slide-from-left 0.4s ease-in forwards;
+    -webkit-animation: slide-from-left 0.4s ease-in forwards;
+}
+
+.slide-from-right{
+    animation: slide-from-right 0.4s ease-in forwards;
+    -webkit-animation: slide-from-right 0.4s ease-in forwards;
 }
