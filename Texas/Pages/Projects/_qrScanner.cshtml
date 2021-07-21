@@ -7,7 +7,7 @@
         <p>@Localizer["Intro_text"]</p>
     </section>
     <section id="project-image">
-        <img src="~/images/qrScanner_systems.png" class="project-img fadeIn" />
+        <img src="~/images/qrScanner_systems.png" id="qrScanner-img" class="project-img fadable slidable-from-right" />
     </section>
     <section id="project-techno">
         <h3 id="project-section-title">@Localizer["Techno"]</h3>
@@ -17,3 +17,9 @@
         <a asp-page="./Projects/QrScanner" class="btn btn-primary" id="learn-more">@Localizer["Learn more"]</a>
     </div>
 </article>
+
+
+@section scripts{
+    <script src="~/js/utils.js" asp-append-version="true"></script>
+    <script src="~/js/animations.js" asp-append-version="true"></script>
+}
