@@ -6,7 +6,7 @@ window.addEventListener('scroll', function () {
     var slidableFromRight = this.document.getElementsByClassName("slidable-from-right");
 
     for (var i = 0; i < fadable.length; i++) {
-        var isElementInView = utils.isElementInView($('#' + fadable[i].id), true);
+        var isElementInView = utils.isElementInView($('#' + fadable[i].id), false);
         if (isElementInView) {
             if (!fadable[i].style.animation.includes("fade-in")){
                 fadable[i].style.animation = "fade-in 0.5s ease-in forwards";
@@ -17,7 +17,7 @@ window.addEventListener('scroll', function () {
     }
 
     for(var i = 0; i < slidableFromLeft.length; i++) {
-        isElementInView = utils.isElementInView($('#' + slidableFromLeft[i].id), true);
+        isElementInView = utils.isElementInView($('#' + slidableFromLeft[i].id), false);
         if (isElementInView) {
             var prevAnimation;
             if (slidableFromLeft[i].style.animation) {
@@ -32,7 +32,7 @@ window.addEventListener('scroll', function () {
     }
 
     for (var i = 0; i < slidableFromRight.length; i++) {
-        isElementInView = utils.isElementInView($('#' + slidableFromRight[i].id), true);
+        isElementInView = utils.isElementInView($('#' + slidableFromRight[i].id), false);
         if (isElementInView) {
             prevAnimation;
             if (slidableFromRight[i].style.animation) {
@@ -45,4 +45,8 @@ window.addEventListener('scroll', function () {
 
         }
     }
+
+    //var el = this.document.getElementById("bio-img");
+    //var res = utils.log(el);
+    //console.log(res);
 });
