@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using AspNetCore.ReCaptcha;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
@@ -11,6 +12,7 @@ using Texas.Models;
 
 namespace Texas.Pages
 {
+    [ValidateReCaptcha]
     public class IndexModel : PageModel
     {
         [BindProperty]

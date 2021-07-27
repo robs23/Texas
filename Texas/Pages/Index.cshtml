@@ -1,10 +1,11 @@
 ﻿@page
 @using Microsoft.AspNetCore.Mvc.Localization
+@using AspNetCore.ReCaptcha
 @inject IViewLocalizer Localizer
 @model IndexModel
-@section head{ 
+@section head{
     <link href="~/css/page-index.css" rel="stylesheet" />
-    <link href="~/css/animation.css" rel="stylesheet"  />
+    <link href="~/css/animation.css" rel="stylesheet" />
 }
 
 @{
@@ -44,12 +45,14 @@
     <section id="row-3">
         <h1>@Localizer["Projects"]</h1>
         <div id="projects-container">
-            <a  is-active-route asp-page="./Projects" asp-fragment="systo" class="project-box"><img src="~/images/projects-systo.png"/>
+            <a is-active-route asp-page="./Projects" asp-fragment="systo" class="project-box">
+                <img src="~/images/projects-systo.png" />
                 <div id="project-text">
                     @Localizer["Systo_text"]
                 </div>
             </a>
-            <a asp-page="./Projects" asp-fragment="qr-scanner" class="project-box"><img src="~/images/qr_scanner_300.png" />
+            <a asp-page="./Projects" asp-fragment="qr-scanner" class="project-box">
+                <img src="~/images/qr_scanner_300.png" />
                 <div id="project-text">
                     @Localizer["QrScanner_text"]
                 </div>
@@ -73,6 +76,7 @@
                 <textarea type="text" placeholder=@Localizer["Message"] id="contact-message" asp-for="Message"></textarea>
                 <span asp-validation-for="Message"></span>
             </div>
+            @Html.ReCaptcha(language: "en-GB")
             <input type="submit" value=@Localizer["Submit"] id="contact-submit" class="btn btn-primary" />
         </form>
     </section>

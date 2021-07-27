@@ -17,6 +17,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Texas.Static;
 using Texas.TagHelpers;
 using Westwind.AspNetCore.LiveReload;
+using AspNetCore.ReCaptcha;
 
 namespace Texas
 {
@@ -53,6 +54,7 @@ namespace Texas
 
             // Register the TagHelperComponent
             services.AddTransient<ITagHelperComponent, GoogleAnalyticsTagHelperComponent>();
+            services.AddReCaptcha(Configuration.GetSection("ReCaptcha"));
         }
 
 

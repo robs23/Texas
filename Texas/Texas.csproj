@@ -6,6 +6,7 @@
     <Content Remove="wwwroot\images\Laptop_wallet_graph.png" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="AspNetCore.ReCaptcha" Version="1.2.3" />
     <PackageReference Include="Ducksoft.NetCore.Razor.Sitemap" Version="1.0.103" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.15" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
