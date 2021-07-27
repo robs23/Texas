@@ -8,7 +8,8 @@
 
 #welcome {
     margin-left: 180px;
-    padding-top: 130px;
+    position: absolute;
+    top: 130px;
     color: white;
     width: 360px;
     animation: fade-in 0.5s ease-in forwards, slide-from-left 0.5s ease-in backwards;
