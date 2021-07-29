@@ -3,6 +3,8 @@
 @using AspNetCore.ReCaptcha
 @inject IViewLocalizer Localizer
 @model IndexModel
+@using Microsoft.Extensions.Options
+@inject IOptions<ReCaptchaSettings> ReCaptchaSettings
 @section head{
     <link href="~/css/page-index.css" rel="stylesheet" />
     <link href="~/css/animation.css" rel="stylesheet" />
@@ -76,7 +78,19 @@
                 <textarea type="text" placeholder=@Localizer["Message"] id="contact-message" asp-for="Message"></textarea>
                 <span asp-validation-for="Message"></span>
             </div>
-            @Html.ReCaptcha(language: "en-GB")
+            <div>
+                <div class="form-group">
+                    @switch (ReCaptchaSettings.Value.Version)
+                    {
+                        case ReCaptchaVersion.V3:
+                            @Html.ReCaptcha(language: "en")
+                            break;
+                        case ReCaptchaVersion.V2Invisible:
+                            @Html.ReCaptcha("Submit Invisible ReCaptcha", className: "btn btn-primary", callback: "SendMail")
+                            break;
+                    }
+                </div>
+            </div>
             <input type="submit" value=@Localizer["Submit"] id="contact-submit" class="btn btn-primary" />
         </form>
     </section>

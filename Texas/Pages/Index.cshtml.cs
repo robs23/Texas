@@ -50,7 +50,10 @@ namespace Texas.Pages
 
         public IActionResult OnPostSendMailAsync()
         {
-            //Name = Request.Form["Name"];
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
             Mail mail = new Mail();
             string textBody =  Name + " przesyła wiadomość: " + Message + ". Możesz odpowiedzieć na adres: " + Mail;
             string htmlBody = string.Format("<p><b>{0}</b> przesyła wiadomość: <br><br>{1}<br><br>Możesz odpowiedzieć na adres: {2}</p>",Name,Message,Mail);
