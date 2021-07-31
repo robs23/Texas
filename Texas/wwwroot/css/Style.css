@@ -130,6 +130,7 @@ hr {
     position: absolute;
     width: 100%;
     height: 50px;
+    z-index:100;
 }
 
     #nav-main ul li {
@@ -302,6 +303,10 @@ footer {
 
     .nav-bar-expanded {
         background-color: rgba(0,0,0,1);
+    }
+
+    #nav-main{
+        margin-left: 10px;
     }
 
     #nav-main ul {
