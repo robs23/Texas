@@ -52,6 +52,7 @@ namespace Texas.Pages
         {
             if (!ModelState.IsValid)
             {
+                TempData["MessageSent"] = "InvalidCaptcha!";
                 return Page();
             }
             Mail mail = new Mail();

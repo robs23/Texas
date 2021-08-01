@@ -132,6 +132,9 @@
   <data name="E-mail" xml:space="preserve">
     <value>E-MAIL</value>
   </data>
+  <data name="InvalidCaptcha" xml:space="preserve">
+    <value>Potwierdź, że nie jesteś robotem, zaznaczając "ptaszka" nad przyciskiem "Wyślij" :)</value>
+  </data>
   <data name="Learn more" xml:space="preserve">
     <value>WIĘCEJ</value>
   </data>

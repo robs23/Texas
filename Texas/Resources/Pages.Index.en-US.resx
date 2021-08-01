@@ -132,6 +132,9 @@
   <data name="E-mail" xml:space="preserve">
     <value>E-MAIL</value>
   </data>
+  <data name="InvalidCaptcha" xml:space="preserve">
+    <value>Confirm, that you are not a robot, by checking checkbox above the "Send" button :)</value>
+  </data>
   <data name="Learn more" xml:space="preserve">
     <value>LEARN MORE</value>
   </data>

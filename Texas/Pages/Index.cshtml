@@ -11,16 +11,26 @@
 }
 
 @{
-    if (TempData["MessageSent"] != null)
-    {
-        <div id="dlg-container">
-            <div id="dlgbox">
-                <div id="dlg-body">@Localizer["MessageSent"]</div>
-                <div id="dlg-btn">
-                    <button onclick="closeDialog()" class="btn btn-success">@Localizer["Close"]</button>
+    if (TempData["MessageSent"] != null){
+        if(TempData["MessageSent"] == "Sent!"){
+            <div id="dlg-container">
+                <div id="dlgbox">
+                    <div id="dlg-body">@Localizer["MessageSent"]</div>
+                    <div id="dlg-btn">
+                        <button onclick="closeDialog()" class="btn btn-success">@Localizer["Close"]</button>
+                    </div>
                 </div>
             </div>
-        </div>
+        }else if(TempData["MessageSent"] == "InvalidCaptcha!"){
+            <div id="dlg-container">
+                <div id="dlgbox">
+                    <div id="dlg-body">@Localizer["InvalidCaptcha"]</div>
+                    <div id="dlg-btn">
+                        <button onclick="closeDialog()" class="btn btn-default">@Localizer["Close"]</button>
+                    </div>
+                </div>
+            </div>  
+        }
     }
 }
 
@@ -79,11 +89,14 @@
                 <span asp-validation-for="Message"></span>
             </div>
             <div>
-                <div class="form-group">
+                <div class="form-group recaptcha-task">
                     @switch (ReCaptchaSettings.Value.Version)
                     {
                         case ReCaptchaVersion.V3:
-                            @Html.ReCaptcha(language: "en")
+                            @Html.ReCaptcha()
+                            break;
+                        case ReCaptchaVersion.V2:
+                            @Html.ReCaptcha()
                             break;
                         case ReCaptchaVersion.V2Invisible:
                             @Html.ReCaptcha("Submit Invisible ReCaptcha", className: "btn btn-primary", callback: "SendMail")
@@ -91,7 +104,7 @@
                     }
                 </div>
             </div>
-            <input type="submit" value=@Localizer["Submit"] id="contact-submit" class="btn btn-primary" />
+            <input type="submit" value=@Localizer["Submit"] id="contact-submit" class="btn btn-primary g-recaptcha" />
         </form>
     </section>
 </article>
