@@ -8,12 +8,12 @@
     Layout = "~/Pages/_Layout.cshtml";
 }
 
-@section head{ 
+@section head{
     <link href="~/css/page-qrScanner.css" rel="stylesheet" />
 }
 
 <article id="qrScanner-overview" class="app-overview">
-    <section id="row-1"></section>
+    <section id="row-1" class="parallax"></section>
     <section id="features">
         <div class="container">
             <div class="feature-container">
@@ -37,3 +37,8 @@
 
     </section>
 </article>
+
+@section scripts{
+    <script src="~/js/utils.js" asp-append-version="true"></script>
+    <script src="~/js/animations.js" asp-append-version="true"></script>
+}

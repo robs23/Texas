@@ -12,7 +12,7 @@
 
 @{
     if (TempData["MessageSent"] != null){
-        if(TempData["MessageSent"] == "Sent!"){
+        if((string)TempData["MessageSent"] == "Sent!"){
             <div id="dlg-container">
                 <div id="dlgbox">
                     <div id="dlg-body">@Localizer["MessageSent"]</div>
@@ -21,7 +21,7 @@
                     </div>
                 </div>
             </div>
-        }else if(TempData["MessageSent"] == "InvalidCaptcha!"){
+        }else if((string)TempData["MessageSent"] == "InvalidCaptcha!"){
             <div id="dlg-container">
                 <div id="dlgbox">
                     <div id="dlg-body">@Localizer["InvalidCaptcha"]</div>
@@ -35,7 +35,7 @@
 }
 
 <article id="index">
-    <section id="row-1">
+    <section id="row-1" class="parallax">
         <div id="welcome">
             <h1>@Localizer["Welcome"]!</h1>
             <p>

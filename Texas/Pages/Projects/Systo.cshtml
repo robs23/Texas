@@ -8,12 +8,12 @@
     Layout = "~/Pages/_Layout.cshtml";
 }
 
-@section head{ 
+@section head{
     <link href="~/css/page-systo.css" rel="stylesheet" />
 }
 
 <article id="systo-overview">
-    <section id="row-1"></section>
+    <section id="row-1" class="parallax"></section>
     <section id="features">
         <div class="container">
             <div class="feature-container">
@@ -68,6 +68,7 @@
 @section scripts{
     <script src="~/js/feature-img.js" asp-append-version="true"></script>
     <script src="~/js/ReplacePngWithGif.js" asp-append-version="true"></script>
-
+    <script src="~/js/utils.js" asp-append-version="true"></script>
+    <script src="~/js/animations.js" asp-append-version="true"></script>
 }
 

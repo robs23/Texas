@@ -4,6 +4,15 @@ window.addEventListener('scroll', function () {
     var fadable = this.document.getElementsByClassName("fadable");
     var slidableFromLeft = this.document.getElementsByClassName("slidable-from-left");
     var slidableFromRight = this.document.getElementsByClassName("slidable-from-right");
+    var parallax = this.document.getElementsByClassName("parallax");
+    let pageTopOffset = this.pageYOffset;
+
+    if (parallax.length > 0) {
+        for (var i = 0; i < parallax.length; i++) {
+            parallax[i].style.backgroundPositionY = pageTopOffset * 0.7 + "px";
+        }
+        
+    }
 
     for (var i = 0; i < fadable.length; i++) {
         var isElementInView = utils.isElementInView($('#' + fadable[i].id), false);
