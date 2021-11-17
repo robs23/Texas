@@ -53,6 +53,23 @@
     width: 300px;
 }
 
+.container-tech-stack{
+    position: relative;
+    display: flex !important;
+    justify-content: space-evenly
+}
+
+.container-tech-stack i {
+    margin-right: 20px;
+    align-self: center;
+    color: #b2b2b2;
+}
+
+.container-tech-stack i span{
+    margin-top: 33px;
+    left: -12px;
+}
+
 
 @media only screen and (max-width: 950px) {
     #projects #row-1 {
