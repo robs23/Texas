@@ -132,6 +132,12 @@
   <data name="Learn more" xml:space="preserve">
     <value>LEARN MORE</value>
   </data>
+  <data name="SourceCode" xml:space="preserve">
+    <value>Source code</value>
+  </data>
+  <data name="SourceCode_text" xml:space="preserve">
+    <value>Github repo</value>
+  </data>
   <data name="Techno" xml:space="preserve">
     <value>TECH STACK</value>
   </data>

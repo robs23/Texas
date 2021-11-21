@@ -30,8 +30,12 @@
     font-weight:bold;
 }
 
-#projects p {
+#projects p, a {
     color: rgba(35, 37, 40, 0.7);
+}
+
+#projects a{
+    font-size: 18px;
 }
 
 .project-img {
@@ -64,6 +68,7 @@
     align-self: center;
     color: #b2b2b2;
 }
+
 
 .container-tech-stack i span{
     margin-top: 33px;
