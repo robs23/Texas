@@ -139,9 +139,15 @@
     <value>Github repo</value>
   </data>
   <data name="Techno" xml:space="preserve">
-    <value>TECH STACK</value>
+    <value>Tech stack</value>
   </data>
-  <data name="Techno_text" xml:space="preserve">
-    <value>The desktop app was created in Windows Forms, mobile app is Xamarin Forms app for Android. Data exchange is handled by WebApi application.</value>
+  <data name="Techno_text_Android" xml:space="preserve">
+    <value>App written in C#, UI in Xamarin Forms, exception handling with use of NLOG and MS App Center</value>
+  </data>
+  <data name="Techno_text_API" xml:space="preserve">
+    <value>Appi in ASP.NET Web Api 2, data kept in SQL Server database and accessed through Entity Framework</value>
+  </data>
+  <data name="Techno_text_Windows" xml:space="preserve">
+    <value>The desktop app was created in C# and Windows Forms, data access through HTTP client, deployment and updates using Squirrel</value>
   </data>
 </root>

@@ -121,10 +121,7 @@
     <value>DEMO</value>
   </data>
   <data name="Demo_text" xml:space="preserve">
-    <value>You can try the app &lt;a href="https://systo.roszak.dev"&gt;here&lt;/a&gt;, either by creating an account for yourself or by loging with demo account credentials: &lt;br /&gt;
-        login: demo
-        &lt;br /&gt;
-        password: demo&lt;/p&gt;</value>
+    <value>You can try the app &lt;a href="https://systo.roszak.dev"&gt;here&lt;/a&gt;, either by creating an account for yourself or by loging with demo account credentials: &lt;/br&gt;login: demo &lt;/br&gt;password: demo</value>
   </data>
   <data name="Intro" xml:space="preserve">
     <value>INTRO</value>
@@ -134,6 +131,9 @@
   </data>
   <data name="Learn more" xml:space="preserve">
     <value>LEARN MORE</value>
+  </data>
+  <data name="SourceCode" xml:space="preserve">
+    <value>Source code</value>
   </data>
   <data name="Techno" xml:space="preserve">
     <value>TECH STACK</value>

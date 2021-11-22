@@ -139,9 +139,15 @@
     <value>Repozytorium Github</value>
   </data>
   <data name="Techno" xml:space="preserve">
-    <value>STOS TECHNOLOGICZNY</value>
+    <value>Stos technologiczny</value>
   </data>
-  <data name="Techno_text" xml:space="preserve">
-    <value>Aplikacja desktopowa jest stworzona w Windows Forms, aplikacja mobilna dla systemu Android powstała przy użyciu Xamarin Forms. Wymianą danych zajmuje sie aplikacja WebApi.</value>
+  <data name="Techno_text_Android" xml:space="preserve">
+    <value>Aplikacja napisana w C#, UI w Xamarin Forms, obsługa wyjątków przy użyciu NLOG i MS App Center</value>
+  </data>
+  <data name="Techno_text_API" xml:space="preserve">
+    <value>Aplikacja ASP.NET Web Api 2, dana trzymane w bazie SQL Server i dostępne przez Entity Framework</value>
+  </data>
+  <data name="Techno_text_Windows" xml:space="preserve">
+    <value>Aplikacja desktopowa jest stworzona w C# i Windows Forms, dostęp do danych przez klienta HTTP, dystrybucja i aktualizację przy pomocy Squirrel</value>
   </data>
 </root>

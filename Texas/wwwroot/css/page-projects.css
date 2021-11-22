@@ -45,6 +45,7 @@
 
 .container-3in1 {
     width: 100vw;
+    padding: 20px, 20px;
     position: relative;
     display: flex !important;
     justify-content: space-evenly;
@@ -57,20 +58,25 @@
     width: 300px;
 }
 
-.container-tech-stack{
+.container-icon-text{
     position: relative;
     display: flex !important;
     justify-content: space-evenly
 }
 
-.container-tech-stack i {
+.container-icon-text p, .container-icon-text > a {
+    width: 90%;
+    word-break: break-word;
+}
+
+.container-icon-text i {
     margin-right: 20px;
     align-self: center;
     color: #b2b2b2;
 }
 
 
-.container-tech-stack i span{
+.container-icon-text i span {
     margin-top: 33px;
     left: -12px;
 }
@@ -96,6 +102,11 @@
 
     .container-3in1 {
         flex-direction: column;
+        padding: 20px 20px;
+    }
+
+    .box-3in1{
+        width: 100%;
     }
 }
 

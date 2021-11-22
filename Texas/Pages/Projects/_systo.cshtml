@@ -9,15 +9,17 @@
     <section id="project-image">
         <img src="~/images/systo_systems.png" id="systo-img" class="project-img fadable slidable-from-left" />
     </section>
-    <section id="project-techno">
-        <h3 id="project-section-title">@Localizer["Techno"]</h3>
+    <section id="project-techno" class="container-icon-text">
+        <i class="fa fa-layer-group tooltip-container" style="font-size:3rem"><span class="tooltiptext">@Localizer["Techno"]</span></i>
         <p>@Localizer["Techno_text"]</p>
     </section>
-    <section id="project-demo">
-        <h3 id="project-section-title">@Localizer["Demo"]</h3>
-        <p>
-            @Localizer["Demo_text"]
-        </p>
+    <section class="container-icon-text">
+        <i class="fa fa-code-branch tooltip-container" style="font-size:3rem"><span class="tooltiptext">@Localizer["SourceCode"]</span></i>
+        <a href="https://github.com/robs23/Horseplay">https://github.com/robs23/Horseplay</a>
+    </section>
+    <section class="container-icon-text">
+        <i class="fa fa-mouse-pointer tooltip-container" style="font-size:3rem"><span class="tooltiptext">@Localizer["Demo"]</span></i>
+        <p>@Localizer["Demo_text"]</p>
     </section>
     <div class="btn-center">
         <a asp-page="./Projects/Systo" class="btn btn-primary" id="learn-more">@Localizer["Learn more"]</a>
